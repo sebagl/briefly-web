@@ -1,0 +1,234 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Raleway&display=swap);
+
+/* Hero */
+
+.image {
+	max-height: 100vh;
+	background-image: url('https://firebasestorage.googleapis.com/v0/b/stream-readers-prod.appspot.com/o/img%2Flibro-auris.jpg?alt=media&token=b41be8b7-d194-45ec-ac08-b08c61aed279');
+	background-repeat: no-repeat;
+	background-color: grey;
+	background-Size: cover;
+	background-Position: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-Items: center;
+	padding: 0;
+}
+
+.paper {
+	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 1em;
+	height: 100vh;
+	background-color: rgb(4,61,84, 0.2);
+}
+.orange {
+	color: rgba(244,146,49,0.8);
+	font-weight: bold;
+}
+.line {
+	border-bottom: 2px solid rgba(244,146,49,0.8);
+	width: 30%;
+	margin: 0.5em;
+}
+.title {
+	margin: 15px;
+	color: white;
+	font-family: Montserrat, sans-serif;
+	font-size: 2.5rem;
+	width: 60%;
+	text-align: center;
+	text-shadow: 0px 3px 5px rgba(75, 75, 75, 0.70);
+	
+}
+
+.subtitle {
+	color: white;
+	font-family: Raleway, sans-serif;
+	font-size: 1.5rem;
+	width: 50%;
+	text-align: center;
+	margin: 0.2em;
+
+}
+
+
+.divider {
+	height: 1em;
+}
+.linkBtn {
+	align-self: center;
+	color: #fff;
+}
+.btnContainer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+
+/* Header */
+
+.header {
+	background-color: rgba(255,255,255,0.21);
+	width: 100%;
+	
+}
+
+.logo {
+	width: 10em;
+	float: right;
+	margin-right: 20px;
+	margin-top: 5px;
+}
+
+/* Contact Section */
+
+.contact-image {
+	height: auto;
+	padding: 3em;
+	background-image: url('https://firebasestorage.googleapis.com/v0/b/stream-readers-prod.appspot.com/o/backgrounds%2FfondoLibroBlanca.jpg?alt=media&token=e7daac8a-db40-42b1-8ea0-98648552d7ef');
+	background-repeat: no-repeat;
+	background-color: grey;
+		/* useTheme().palette.type === light
+			? useTheme().palette.grey[50]
+			: useTheme().palette.grey[900]; */
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow:
+		inset 0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12);
+	/* [useTheme().breakpoints.down(sm)]: {
+		padding: 1em,
+	}, */
+}
+
+.avatar {
+	margin: 1em;
+	background-color: transparent;
+	color: rgba(0,0,0,0.7);
+}
+.form {
+	width: 100%;
+	margin-top: 1em;
+}
+.submit {
+	margin: 1em;
+}
+.link {
+	color: grey;
+}
+.contact-text {
+	color: rgba(255,255,255,0.8);
+	font-size: 1.5em;
+	width: 100%;
+	font-family: Montserrat;
+	text-align: left;
+	margin-left: 5em;
+	
+}
+
+.contact-title {
+	color: #043e54;
+	font-size: 2em;
+
+	font-family: Montserrat;
+	text-align: left;
+	/* [useTheme().breakpoints.down(xs)]: {
+		fontSize: 25;
+	};
+	[useTheme().breakpoints.down(md)]: {
+		color: rgba(0,0,0,0.5),
+		textAlign: center,
+	}, */
+}
+.contact-subtitle {
+	color: rgba(0,0,0,0.7);
+	font-size: 1em;
+
+	font-family: Montserrat;
+	text-align: left;
+	/* [useTheme().breakpoints.down(md)]: {
+		textAlign: center;
+	}; */
+}
+.hidden {
+	display: flex;
+}
+
+.form {
+	width: 80%;
+	margin-top: 0.5em;
+}
+.submit {
+	margin-top: 1em;
+	background-color: #043e54;
+}
+.formField {
+	line-height: 0.1rem;
+}
+.textarea {
+	font-size: 2em;
+}
+.cssLabel {
+	color: #043e54;
+	/* [useTheme().breakpoints.down(xs)]: {
+		lineHeight: 0.1;
+	}; */
+}
+
+.cssOutlinedInput {
+	margin-bottom: 0.5em;
+	border-color: #043e54;
+	background-color: #fff;
+	opacity: 50%;
+	
+}
+
+.notchedOutline {
+	border-width: 1px;
+	border-color: #043e54 !important;
+}
+
+
+@media (max-width: 900px) {
+	.title {
+		font-size: 2.2rem;
+	}
+	.contact-image {
+		height: auto;
+	}
+	
+}
+
+@media (max-width: 700px) {
+	.title {
+		font-size: 2rem;
+	}
+	.subtitle{
+		font-size: 1.2rem;
+	}
+	.logo {
+		width: 7em;
+	}
+	
+	
+}
+
+@media (max-width: 500px) {
+	.title {
+		font-size: 1.5rem;
+	}
+	.subtitle{
+		font-size: 1rem;
+	}
+	
+}

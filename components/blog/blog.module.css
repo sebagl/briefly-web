@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+
+
+.img {
+  object-fit: cover;
+	height: 13em; 
+	position: relative 
+}
+
+.card {
+	font-family: "Quicksand", sans-serif;
+  display: flex;
+  flex-direction: column;
+  width: clamp(20rem, calc(20rem + 2vw), 22rem);
+  overflow: hidden;
+  box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 1em;
+  background: #ECE9E6;
+	background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+
+}
+
+.card__body {
+  display: flex;
+  flex-direction: column;
+  padding:  .7rem 1rem;
+}
+
+.card__footer {
+
+  padding:  .7rem 1rem;
+}
+
+
+.tag {
+  align-self: flex-start;
+  padding: .25em .75em;
+  border-radius: 1em;
+  font-size: .75rem;
+}
+
+.tag-blue {
+	margin: 0.3em;
+  background: #56CCF2;
+	background: linear-gradient(to bottom, #2F80ED, #56CCF2);
+  color: #fafafa;
+}
+
+.tag-brown {
+  background: #D1913C;
+background: linear-gradient(to bottom, #FFD194, #D1913C);
+  color: #fafafa;
+}
+
+.tag-red {
+  background: #cb2d3e;
+background: linear-gradient(to bottom, #ef473a, #cb2d3e);
+  color: #fafafa;
+}
+
+.card__title {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+	margin: 0.2em;
+}
+
+.card__text{
+	font-size: 0.8rem;
+}
+
+.user {
+  margin: 0;
+}
+
+.user__info  {
+  margin-bottom: 0.5em;
+}
+
+.user__info > small {
+  color: #666;
+	font-size: 0.7rem;
+}

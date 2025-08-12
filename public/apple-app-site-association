@@ -1,0 +1,11 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "C6M89A3G9G.app.stream-readers",
+        "paths": ["*"]
+      }
+    ]
+  }
+}

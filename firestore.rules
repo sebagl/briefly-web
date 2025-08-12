@@ -1,0 +1,44 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /customers/{uid} {
+      allow read: if request.auth.uid == uid;
+
+       match /checkout_sessions/{id} {
+       	allow read, write: if true;
+         // allow read, write: if request.auth.uid == uid;
+       }
+       match /subscriptions/{id} {
+         allow read: if true;
+         // allow read: if request.auth.uid == uid;
+       }
+      
+       function hasMemberSubs() {
+       return request.auth.token.stripeRole == "active_member";
+     }
+
+       match /content-basic/{doc} {
+         allow read: if hasMemberSubs() 
+       }
+    
+    }
+
+     match /memberships/{id} {
+       allow read: if true;
+
+       match /prices/{id} {
+         allow read: if true;
+       }
+     }
+     
+     match /mail/{id} {
+       allow read, write: if true;
+      }
+      
+      match /books/{id} {
+       allow read, write: if true;
+      }
+    
+    
+  }
+}

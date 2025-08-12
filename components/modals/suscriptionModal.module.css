@@ -1,0 +1,338 @@
+.suscription-ReactModal__Content {
+	width: 60%;
+	min-height: 50%;
+	outline: none;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border: 2px solid #fff;
+	display: flex;
+
+	position: absolute;
+	left: 20%;
+	top: 7%;
+	border-radius: 5px;
+	font-family: "Raleway", sans-serif;
+	z-index: 10000;
+	}
+	
+	.suscription-ReactModal__Overlay {
+		position: fixed;
+		inset: 0px;
+		background-color: rgba(255, 255, 255, 0.75);
+		z-index: 10000;
+	}
+
+.suscription-container_child {
+	width: 50%;
+}
+
+.suscription-container_child.suscription-cont_thumbnail {
+	background-image: url("https://firebasestorage.googleapis.com/v0/b/stream-readers-prod.appspot.com/o/backgrounds%2Fsuscr%C3%ADbete-mobile.png?alt=media&token=f0f9d02f-46a0-454d-a6d0-b77f80e9fff4");
+	background-size: cover;
+	background-position-x: 50%;
+	background-position-y: 35%;
+	padding: 0.5em;
+	font-family: "Raleway", sans-serif;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.suscription-container_child.suscription-cont_form {
+	width: 50%;
+	overflow: auto;
+	font-family: "Raleway", sans-serif;
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 2em 1em;
+	max-height: 70vh;
+}
+
+.suscription-form-title {
+	color: #fff;
+	font-size: 1.5rem;
+	margin-top: 3em;
+	text-align: center;
+	padding: 10px;
+	/* background-color: rgba(0, 0, 0, 0.3); */
+}
+
+.sub-price {
+	color: #fff;
+	font-size: 1rem;
+	margin-top: 3em;
+	text-align: center;
+	font-size: 1rem;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.orange-text {
+	color: #f49231;
+	font-weight: bold;
+}
+
+.suscription-logo {
+	width: 40%;
+	align-self: center;
+}
+
+.contactForm {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.suscription-close-btn {
+	background-color: rgba(0, 0, 0, 0);
+	color: #f49231;
+	font-size: 0.8rem;
+	border: 0;
+	cursor: pointer;
+}
+
+/* *Formik label {
+	font-weight: bold;
+	display: flex;
+	margin-bottom: 5px;
+}
+
+input + label {
+	font-weight: bold;
+	display: inline-flex;
+	margin-right: 20px;
+} */
+/* 
+form {
+	width: 80%;
+} */
+
+.input {
+	display: block;
+	width: 80%;
+	padding: 0.3rem 0.5rem;
+	font-size: 0.8em;
+	line-height: 1.42857143;
+	color: #555;
+	background-color: transparent;
+	background-image: none;
+	border: 0px solid #ccc;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+	outline: none;
+}
+
+.input:focus {
+	border-bottom: 1px solid #f49231;
+}
+
+.vencimiento {
+	display: flex;
+	width: 90%;
+	justify-content: space-between;
+}
+
+.form-control {
+	margin-bottom: 0.5rem;
+}
+
+.error {
+	color: red;
+	font-size: 0.6rem;
+}
+
+.form-container > button {
+	background-color: rgba(0, 0, 0, 0);
+	color: #f49231;
+	font-size: 28px;
+	border: 0;
+	align-self: flex-end;
+	margin: 3px;
+	cursor: pointer;
+	outline: none;
+}
+
+.form-container > p {
+	color: #043e54;
+	font-size: 28px;
+	font-weight: 900;
+	margin-top: 0;
+}
+
+.form-container > .login-form {
+	display: flex;
+	flex-direction: column;
+	margin: 0 !important;
+	width: 400px;
+}
+
+.form-container > form > input {
+	margin: 5px 0;
+	padding: 6px;
+	border: none;
+	border-radius: 5px;
+	height: 25px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+.form-container > form > input::placeholder {
+	font-family: "Montserrat", sans-serif;
+	font-size: 13px;
+	font-style: italic;
+}
+
+.form-container > form > textarea {
+	padding: 6px;
+	margin: 5px 0;
+	border: none;
+	border-radius: 5px;
+	resize: none;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+.form-container > form > textarea::placeholder {
+	font-family: "Montserrat", sans-serif;
+	font-size: 0.5rem;
+	font-style: italic;
+}
+
+.suscription-submit {
+	background-color: #043e54;
+	border: 0;
+	height: 35px;
+	width: 200px;
+	color: #fff;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 17px;
+	border-radius: 40px;
+	transition: all 0.2s ease-in-out;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	letter-spacing: 1px;
+	cursor: pointer;
+	align-self: center;
+}
+
+/*Login Form*/
+
+Form > .send {
+	background-color: #043e54;
+	border: 0;
+	height: 35px;
+	width: 200px;
+	color: #f49231;
+	margin-top: 20px;
+
+	font-size: 17px;
+	border-radius: 40px;
+	transition: all 0.2s ease-in-out;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	letter-spacing: 1px;
+	cursor: pointer;
+	align-self: center;
+	outline: none;
+}
+
+.form-field {
+	width: 90%;
+}
+
+@media (max-width: 900px) {
+	.suscription-ReactModal__Content {
+		width: 80%;
+		left: 10%;
+	}
+}
+
+@media (max-width: 750px) {
+	.suscription-submit {
+		height: 1.8em;
+		width: 8em;
+
+		margin-top: 1em;
+		margin-bottom: 1em;
+		font-size: 1rem;
+	}
+	.suscription-ReactModal__Content {
+		max-height: 100vh;
+		overflow-y: auto;
+	}
+}
+@media (max-width: 500px) {
+	.suscription-ReactModal__Content {
+		flex-direction: column;
+		width: 80%;
+	}
+	.suscription-container_child.suscription-cont_form {
+		width: 100%;
+		padding: 0;
+	}
+	.suscription-container_child.suscription-cont_thumbnail {
+		width: 100%;
+		padding: 0.8em 0;
+		height: 10%;
+		background-image: url("https://firebasestorage.googleapis.com/v0/b/stream-readers-prod.appspot.com/o/backgrounds%2FDesktop.jpg?alt=media&token=f0dff42b-4530-4f6e-b0f2-07297797f5fc");
+
+	}
+
+	.suscription-logo {
+		margin-bottom: 1em;
+	}
+
+	.suscription-form-title {
+		color: #fff;
+		font-size: 1.2rem;
+		margin-top: 1em;
+		text-align: left;
+	}
+	.sub-price {
+		margin-top: 0.5em;
+
+		font-size: 0.7rem;
+	}
+
+	/* h3 {
+		margin: 0.3em 0 0.5em 0;
+		font-size: 0.9rem;
+	} */
+
+	.suscription-logo {
+		margin-bottom: 0em;
+		width: 5em;
+	}
+	.suscription-close-btn {
+		font-size: 0.6rem;
+		letter-spacing: 0;
+	}
+
+	/* input[type="text"],
+	input[type="email"],
+	input[type="password"],
+	textarea,
+	select {
+		padding: 0.3rem 0.5rem;
+		font-size: 0.7em;
+		line-height: 1;
+		margin: 0;
+	} */
+
+	/* label {
+		font-size: 0.8em;
+		margin-bottom: 1em;
+	} */
+}
+
+@media (max-width: 350px) {
+	.suscription-forgotBtn {
+		margin-left: 1em;
+		font-size: 0.7em;
+	}
+	.suscription-container_child.suscription-cont_form {
+		padding: 1em 0;
+	}
+}

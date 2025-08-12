@@ -1,0 +1,582 @@
+
+/* Button variants */
+
+.button {
+	font-family: "Montserrat", sans-serif;
+}
+
+.ctaButton {
+	background-color: #f49231;
+	border: 0;
+	color: white;
+	transition: all 0.2s ease-in-out;
+	box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.1);
+	letter-spacing: 1px;
+	cursor: pointer;
+	
+}
+
+.scale:hover {
+	transform: scale(1.1);
+}
+
+.primaryButton{
+	background-color: rgba(244, 146, 49, 0.1);
+	border: 1px solid #F49231;
+	color: #F49231;
+	transition: all 0.2s ease-in-out;
+	box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2);
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+
+.closeButton {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	border: none;
+	background: transparent;
+	width: 30px !important;
+	height: 30px !important;
+	cursor: pointer;
+	font-size: 25px !important;
+}
+/* Button size */
+
+.largeButton{
+	height: 50px;
+	width: 320px;
+	font-size: 20px;
+}
+
+.mediumButton{
+	height: 45px;
+	width: 200px;
+	font-size: 19px;
+}
+
+.smallButton{
+	height: 35px;
+	width: 143px;
+	font-size: 14px;
+}
+
+.rounded{
+	border-radius: 8px;
+}
+
+
+/* Header */
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		transition: top 0.3s, background-color 0.3s;
+	padding: 15px 50px;
+	max-height: 55px;
+	z-index: 100;
+	overflow: visible;
+	min-width: 70%;
+
+}
+
+.visible {
+	top: 0;
+	background-color: rgba(42, 85, 105, 0.5)
+}
+
+.hidden {
+	top: -55px;
+	/* or whatever the height of your header is */
+}
+.logoHome {
+	display: flex;
+	align-items: center;
+	width: 200px;
+}
+
+.logoHome > img {
+	width: 100%;
+}
+
+.hola {
+	color: #fff;
+	font-family: "Raleway", Helvetica, sans-serif;
+	display: inline-block;
+	margin-left: 0.5em;
+}
+
+.userMenu {
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: column;
+	list-style: none;
+	position: absolute;
+	top: 75px;
+	left: 85%;
+	color: #fff;
+	cursor: pointer;
+	font-size: 0.8rem;
+	margin-top: -1.5em;
+	z-index: 100;
+	display: none;
+}
+
+.userMenu > li {
+	margin-top: 8px;
+}
+
+.userMenu > li:hover {
+	color: #f49231;
+	cursor: pointer;
+}
+
+.hidden {
+	display: none !important;
+}
+
+.orange {
+	color: #f49231;
+}
+
+.nav {
+	display: flex;
+
+	align-items: center;
+}
+
+.desktopMenu {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.desktopMenu > li {
+	font-family: Montserrat;
+	margin-left: 12px;
+	margin-right: 12px;
+	font-size: 14px;
+	text-decoration: none;
+	color: white;
+	display: block;
+	padding-right: 5px;
+	letter-spacing: 0.5px;
+}
+
+.desktopMenu > li:nth-last-child(-n + 3) {
+	border-right: 0px;
+}
+
+.desktopMenu li a {
+	color: white;
+	text-decoration: none;
+}
+
+.desktopMenu > li > a:hover {
+	color: #f49231;
+}
+
+.desktopMenu li button {
+	color: white;
+	text-decoration: none;
+	border: 0;
+	background-color: transparent;
+	font-family: "Montserrat", sans-serif;
+	cursor: pointer;
+	padding: 0;
+	outline: none;
+	letter-spacing: 0.5px;
+}
+
+.desktopMenu > li button:hover {
+	color: #f49231;
+}
+
+
+
+.perfil-btn {
+	background-color: rgba(0, 0, 0, 0.2);
+	border: 1px solid #f49231;
+	height: 1.5rem;
+	width: 7.5rem;
+	color: white;
+	margin: 0;
+	font-size: 0.7rem;
+	border-radius: 40px;
+	transition: all 0.2s ease-in-out;
+	box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2);
+
+	cursor: pointer;
+	outline: none;
+}
+
+.logout-btn {
+	color: white;
+	text-decoration: none;
+	border: 0;
+	background-color: transparent;
+	font-family: "Montserrat", sans-serif;
+	cursor: pointer;
+	padding: 0;
+	outline: none;
+	letter-spacing: 0.5px;
+}
+
+/* Footer */
+
+.footer {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 20vh;
+	background-color: #043e54;
+	
+	
+}
+
+.social {
+	display: flex;
+	width: 20%;
+	
+}
+
+.social > a {
+	cursor: pointer;
+}
+
+
+.copyContainer {
+	display: flex;
+	color: rgba(255, 255, 255, 0.7);
+	font-size: 10px;
+}
+
+.copyright {
+	font-size: 15px;
+}
+
+
+/* Form */
+
+.contactSection {
+	position: relative;
+	height: 60vh;
+	background-color: transparent;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-bottom: 50px;
+	padding: 0 60px;
+	margin-top: 50px;
+}
+
+.imagePosition {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+.textContainer{
+	width: 35%;
+}
+
+.formSectionTitle{
+	margin: 10px;
+	color: #000000;
+	font-size: 40px;
+	line-height: 50px;
+}
+
+.formSectionText{
+	margin: 10px;
+	font-weight: 400;
+	font-size: 25px;
+	/* line-height: 52px; */
+	/* or 162% */
+	color: #000000;
+}
+
+.containerForm {
+	color: white;
+	width: 30%;
+	background-color: rgba(255, 255, 255, 0.3);
+	padding: 2em;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	object-position: right bottom;
+	text-align: start;
+	box-shadow: 0px 10px 40px -12px rgba(46, 46, 46, 0.15);
+}
+
+.formTitle{
+	margin: 5px;
+}
+
+.formHome {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	width: 75%;
+}
+
+.text-input {
+	width: 100%;
+	margin-top: 10px;
+	padding: 6px;
+	border: none;
+	border-radius: 5px;
+	height: 25px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	background-color: rgba(255, 255, 255, 0.5);
+	font-family: "Montserrat", sans-serif;
+	font-size: 13px;
+	
+}
+
+.textarea {
+	width: 100%;
+	padding: 6px;
+	margin-top: 10px;
+	border: none;
+	border-radius: 5px;
+	resize: none;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	background-color: rgba(255, 255, 255, 0.5);
+	font-family: "Montserrat", sans-serif;
+	font-size: 13px;
+}
+
+.success {
+	text-align: center;
+	display: block;
+	padding: 0.5em;
+	color: #fff;
+	background: #79c879;
+	margin-bottom: 2em;
+	font-size: 0.8rem;
+}
+
+@media (max-width: 1000px) {
+	.desktopMenu {
+		display: none;
+	}
+}
+
+@media (max-width: 900px) {
+	.contactSection {
+		flex-direction: column;
+		padding: 2em 0;
+	}
+	.containerForm {
+		width: 50%;
+		background-color: rgba(255, 255, 255, 0.3);
+		padding: 1em;
+		margin-bottom: 1.5em;
+	}
+	.footer {
+		padding: 1em;
+	}
+
+	.copyright {
+		font-size: 0.75rem;
+	}
+	.textContainer{
+		width: 70%;
+		text-align: center;
+	}
+	
+	.formSectionTitle{
+		margin: 10px;
+		font-weight: 700;
+		font-size: 25px;
+		line-height: 30px;
+	}
+	
+	.formSectionText{
+		margin: 10px;
+		font-weight: 400;
+		font-size: 16px;
+		/* or 162% */
+		color: #000000;
+	}
+}
+
+@media (max-width: 750px) {
+	.contactSection > p {
+		font-size: 2rem;
+	}
+
+	.containerForm {
+		width: 80%;
+		padding: 2em;
+	}
+
+	.footer {
+		flex-direction: column;
+		padding: 5em 3em;
+		height: 20%;
+	}
+
+	.social{
+		width: 200px;
+	}
+
+}
+
+@media (max-width: 500px) {
+	.mobile-menu {
+		background: #043d54ec;
+		width: 75vw;
+	}
+
+	.logoHome {
+		width: 130px;
+	}
+
+
+
+	.socialIcons > Image {
+		height: 45px;
+	}
+
+	.copyContainer {
+		margin-top: 0.8em;
+	}
+	
+	.contactSection > p {
+		font-size: 1.5rem;
+		margin-top: 1em;
+	}
+
+	.copyContainer {
+		text-align: center;
+	}
+	
+}
+
+/* Pricing */
+
+.planContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center; 
+	justify-content: center; 
+	padding: 0; 
+	box-sizing: border-box;
+	width: 100%;
+  }
+
+  .planSelector {
+	display: flex;
+	border: 1px solid #ECEEEC;
+	border-radius: 25px;
+	overflow: hidden;
+	padding: 0.3125em;
+  }
+  
+  .planSelector button {
+	flex: 1;
+	padding: 0.625em 2em;
+	border: none;
+	border-radius: 1.25em;
+	background: transparent;
+	cursor: pointer;
+	transition: background 0.3s;
+	font-size: 0.875em;
+	color: #858585;
+	font-family: "Raleway", sans-serif;
+  }
+  
+  .planSelector button.active {
+	background: #043E54;
+	color: #fff;
+  }
+
+  .priceDisplay {
+	margin-top: 1em;
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+  }
+  
+  .priceDisplay > span {
+	color: #858585;
+	font-weight: 700;
+	font-size: 1.2em;
+	display: block;
+	text-decoration: line-through;
+}
+
+.priceDisplay div {
+	color: #F49231;
+	font-size: 1.9em;
+	display: block;
+	margin-top: -0.2em;
+	font-weight: 700;
+}
+
+.priceDisplay div > span {
+	color: #043E54;
+	font-weight: bold;
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.priceBullets {
+	padding: 0;
+	font-family: "Montserrat", sans-serif;
+}
+
+.priceBullets li {
+	list-style: none;
+	margin-bottom: 10px; 
+	display: flex; 
+	align-items: center;
+	font-size: 12px;
+	flex-wrap: wrap;
+}
+
+.priceBullets li span {
+	margin-left: 5px; 
+	white-space: 'nowrap'
+}
+
+@media (max-width: 800px) {
+	.planSelector {
+	  padding: 0.25em;
+	  border-radius: 20px;
+	}
+  
+	.planSelector button {
+	  padding: 0.5em 1em;
+	  font-size: 0.75em;
+	  border-radius: 1em;
+	}
+
+	.priceDisplay div {
+		font-size: 1.7em;
+		margin-top: -0.15em;
+	}
+
+	.priceDisplay > span {
+		font-size: 1em;
+	}
+
+	.priceBullets {
+		margin: 10px 5px;
+	}
+  }
+  
+  

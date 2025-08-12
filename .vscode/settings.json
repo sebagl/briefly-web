@@ -1,0 +1,8 @@
+{
+	"typescript.validate.enable": false,
+	"typescript.check.npmIsInstalled": true,
+	"javascript.validate.enable": true,
+	"js/ts.implicitProjectConfig.strictFunctionTypes": true,
+	"js/ts.implicitProjectConfig.strictNullChecks": true,
+	"typescript.format.enable": true
+}
