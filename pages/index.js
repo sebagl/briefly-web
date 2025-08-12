@@ -21,7 +21,7 @@ import dynamic from 'next/dynamic';
 const SamplePlayer = dynamic(() => import('../components/suscribete/SamplePlayer'), { ssr: false });
 import useRutas from '../hooks/useRutas';
 
-function Home() {
+export default function Home() {
   const [screenSize, setScreenSize] = useState('large');
   const [selectedPlan, setSelectedPlan] = useState(null);
   const [progressData, setProgressData] = useState({});
@@ -164,5 +164,3 @@ function Home() {
     </>
   );
 }
-
-export default Home;
