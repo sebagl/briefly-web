@@ -4,7 +4,7 @@ import { AuthProvider, ModalsStateProvider, BookProgressProvider, ScrollProvider
 import TagManager from 'react-gtm-module';
 import { useRouter } from 'next/router';
 import Script from 'next/script';
-import { getAnalytics, logEvent } from 'firebase/analytics';
+import { getAnalytics, logEvent, isSupported } from 'firebase/analytics';
 import * as gtag from '../config/gtag';
 
 function MyApp({ Component, pageProps }) {
@@ -29,19 +29,55 @@ function MyApp({ Component, pageProps }) {
   }, [router.events]);
 
   useEffect(() => {
-    const analytics = getAnalytics();
-    const handleRouteChange = (url) => {
-      // Firebase Analytics
-      logEvent(analytics, 'page_view', {
-        page_path: url,
-        platform: 'web'
-      });
-      // GTM
-      gtag.pageview(url);
+    let analyticsInstance = null;
+    let unsubscribed = false;
+
+    const setup = async () => {
+      if (typeof window === 'undefined') return;
+      try {
+        const supported = await isSupported().catch(() => false);
+        if (!supported) return;
+        // Only initialize analytics if measurementId is provided
+        if (!process.env.NEXT_PUBLIC_MEASUREMENT_ID) return;
+        analyticsInstance = getAnalytics();
+      } catch (err) {
+        // eslint-disable-next-line no-console
+        console.warn('Analytics not initialized:', err);
+      }
+
+      const handleRouteChange = (url) => {
+        try {
+          if (analyticsInstance) {
+            logEvent(analyticsInstance, 'page_view', {
+              page_path: url,
+              platform: 'web',
+            });
+          }
+          if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
+            gtag.pageview(url);
+          }
+        } catch (err) {
+          // eslint-disable-next-line no-console
+          console.warn('Route analytics error:', err);
+        }
+      };
+
+      if (!unsubscribed) {
+        router.events.on('routeChangeComplete', handleRouteChange);
+      }
+
+      return () => {
+        router.events.off('routeChangeComplete', handleRouteChange);
+      };
     };
-    router.events.on('routeChangeComplete', handleRouteChange);
+
+    const cleanupPromise = setup();
     return () => {
-      router.events.off('routeChangeComplete', handleRouteChange);
+      unsubscribed = true;
+      // Ensure cleanup when setup resolved
+      if (cleanupPromise && typeof cleanupPromise === 'function') {
+        cleanupPromise();
+      }
     };
   }, [router.events]);
 
