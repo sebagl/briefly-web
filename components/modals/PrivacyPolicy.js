@@ -34,7 +34,7 @@ function PrivacyPolicy(props) {
     >
       <Button variant="close" size="large" onClick={handleClose}/>
 
-      <h1 style={{textAlign: 'center'}}>Política de Privacidad</h1>
+      <h1 style={{textAlign: 'center'}}>Privacy Policy</h1>
 
       <div style={{overflow: 'scroll'}}>
         <p>

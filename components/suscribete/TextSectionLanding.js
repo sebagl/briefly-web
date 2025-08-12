@@ -68,7 +68,7 @@ function TextSection(props) {
       <style>{mediaQueries}</style>
       <div style={styles.textContainer}>
         <p style={styles.text}>
-          Descarga la App y disfruta de tu suscripción con acceso ilimitado a nuestra colección de audiolibros
+          Get the app and enjoy unlimited access to our audiobook catalog
         </p>
       </div>
       <div style={styles.buttonContainer}>

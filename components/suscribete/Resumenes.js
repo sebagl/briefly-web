@@ -222,7 +222,7 @@ const Resumenes = ({
   return (
     <>
       <div ref={containerRef} style={styles.container}>
-        <h2 ref={titleRef} style={styles.title}>Resúmenes</h2>
+        <h2 ref={titleRef} style={styles.title}>Summaries</h2>
         <p style={styles.subtitle}>
           Descubre los puntos clave de los libros más conocidos en formato de resúmenes.
         </p>
@@ -247,7 +247,7 @@ const Resumenes = ({
             <CircularProgress />
           ) : error ? (
             <div style={{ color: 'white', textAlign: 'center' }}>
-              Ha ocurrido un error, intentalo nuevamente
+              Something went wrong. Please try again.
             </div>
           ) : (
             <div style={styles.carouselWrapper}>

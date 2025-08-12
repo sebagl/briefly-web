@@ -46,24 +46,24 @@ function ReviewsSection() {
 
   const reviewsData = [
     {
-      review: 'No hay mejor forma de disfrutar mis trayectos diarios. ¡Los audiolibros en 3D son una maravilla!',
-      userName: 'Julia - México',
-      subscription: 'Suscriptora Anual'
+      review: 'There is no better way to enjoy my daily commute. The 3D audiobooks are amazing!',
+      userName: 'Julia - Mexico',
+      subscription: 'Annual member'
     },
     {
-      review: 'Lo mejor es la calidad del audio y la selección de audiolibros en 3D. Es como estar dentro de la historia, nunca había vivido algo tan inmersivo.',
-      userName: 'Fátima - Argentina',
-      subscription: 'Suscriptor Mensual'
+      review: 'The audio quality and 3D audiobook selection are the best. It feels like being inside the story—truly immersive.',
+      userName: 'Fatima - Argentina',
+      subscription: 'Monthly member'
     },
     {
-      review: 'Gracias a las rutas de aprendizaje, he podido mejorar en temas como finanzas y desarrollo personal. La mejor inversión que hice este año.',
+      review: 'Thanks to the learning paths, I improved in finance and personal growth. Best investment I made this year.',
       userName: 'Ricardo - Chile',
-      subscription: 'Suscriptor Mensual'
+      subscription: 'Monthly member'
     },
     {
-      review: 'Amo la flexibilidad de esta app. Puedo escuchar mis libros favoritos en cualquier lugar.',
+      review: 'I love the flexibility. I can listen to my favorite books anywhere.',
       userName: 'Facundo - Argentina',
-      subscription: 'Suscriptor Anual'
+      subscription: 'Annual member'
     }
   ];
 
@@ -71,8 +71,8 @@ function ReviewsSection() {
     <section style={styles.reviewsSection}>
       <style>{mediaQueries}</style>
       <h2 style={styles.heading}>
-        Usuarios que ya disfrutan de nuestra{' '}
-        <span style={styles.highlightedText}>biblioteca ilimitada</span>
+        Listeners who love our{' '}
+        <span style={styles.highlightedText}>unlimited library</span>
       </h2>
       <div style={styles.reviews}>
         {reviewsData.map((review, index) => (

@@ -131,8 +131,8 @@ function LandingActions({ handleConvertion, screenSize, rutas = [], currentRutaI
 
   return (
     <div style={styles.container}>
-      <h2 style={styles.discount}>BEST SELLERS</h2>
-      <h4 style={styles.planAnual}>Resumidos en AUDIOLIBROS</h4>
+      <h2 style={styles.discount}>BESTSELLERS</h2>
+      <h4 style={styles.planAnual}>Summarized as audiobooks</h4>
       <div style={styles.categoryWrapper}>
        
         <div style={styles.categoryContainer}>
@@ -153,16 +153,16 @@ function LandingActions({ handleConvertion, screenSize, rutas = [], currentRutaI
                 ...styles.descuento,
               }}
             >
-              Cargando...
+              Loading...
             </div>
           )}
         </div>
       </div>
       
-      <p style={styles.description}>Accede a contenido exclusivo e ilimitado</p>
-      <p style={styles.price}>con la prueba gratuita de 7 días</p>
+      <p style={styles.description}>Unlimited access to exclusive content</p>
+      <p style={styles.price}>Start your 7-day free trial</p>
       <Button 
-        text="Comenzar prueba" 
+        text="Start free trial" 
         variant="callToAction" 
         size="large" 
         onClick={() => handleConvertion()} 

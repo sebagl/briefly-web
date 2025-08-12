@@ -8,43 +8,43 @@ function IconSectionLanding({ screenSize, handleConvertion }) {
   const icons = [
     {
       icon: RocketLaunchIcon,
-      alt: 'Contenido ilimitado',
-      text: 'Contenido ilimitado'
+      alt: 'Unlimited content',
+      text: 'Unlimited content'
     },
     {
       icon: MapIcon,
-      alt: 'Rutas de aprendizaje',
-      text: 'Rutas de aprendizaje'
+      alt: 'Learning paths',
+      text: 'Learning paths'
     },
     {
       icon: CalendarDaysIcon,
-      alt: 'Nuevos audiolibros',
-      text: 'Nuevos audiolibros cada mes'
+      alt: 'New audiobooks',
+      text: 'New audiobooks every month'
     },
     {
       icon: AdjustmentsVerticalIcon,
-      alt: 'Control de velocidad',
-      text: 'Control de velocidad de reproducción'
+      alt: 'Speed control',
+      text: 'Playback speed control'
     },
     {
       icon: SpeakerWaveIcon,
-      alt: 'Sonido 3D',
-      text: 'Acceso a audiolibros con sonido 3D'
+      alt: '3D sound',
+      text: 'Immersive 3D audio'
     },
     {
       icon: SparklesIcon,
-      alt: 'Resúmenes',
-      text: 'Acceso a resúmenes'
+      alt: 'Summaries',
+      text: 'Access to summaries'
     },
     {
       icon: FaceSmileIcon,
-      alt: 'Variedad de géneros',
-      text: 'Amplia variedad de géneros'
+      alt: 'Genre variety',
+      text: 'Wide variety of genres'
     },
     {
       icon: ForwardIcon,
-      alt: 'Avanzar y retroceder',
-      text: 'Avanzar y retroceder en la pista de audio'
+      alt: 'Skip controls',
+      text: 'Forward and rewind audio'
     },
   ];
 
@@ -89,8 +89,8 @@ function IconSectionLanding({ screenSize, handleConvertion }) {
 
   return (
     <section style={styles.iconSectionLanding}>
-      <h2 style={styles.h2}>¿Qué incluye tu suscripción?</h2>
-      <h3 style={styles.h3}>Al suscribirte, tendrás acceso a todos estos beneficios exclusivos que harán tu experiencia auditiva inigualable.</h3>
+      <h2 style={styles.h2}>What’s included in your membership?</h2>
+      <h3 style={styles.h3}>Unlock all these premium features to elevate your listening experience.</h3>
       <div style={styles.iconContainer}>
         {icons.map((item, index) => (
           <IconCardSmall
@@ -104,7 +104,7 @@ function IconSectionLanding({ screenSize, handleConvertion }) {
       </div>
       <div style={styles.buttonContainer}>
         <Button 
-          text="Prueba 7 días gratis" 
+          text="Start 7-day free trial" 
           variant="callToAction" 
           size="medium" 
           onClick={handleConvertion} 

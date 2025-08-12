@@ -123,7 +123,7 @@ const Beneficios = () => {
   return (
     <div style={styles.container}>
       <h2 style={styles.title}>
-        ¿Por qué elegir Stream Readers App?
+          Why choose Briefly Books?
       </h2>
       <div style={styles.imageContainer}>
         <Image
@@ -135,22 +135,22 @@ const Beneficios = () => {
         />
         <div style={styles.featureTopLeft}>
           <FeatureText Icon={HeadphonesIcon} delay={0}>
-            Lleva tus audiolibros favoritos contigo y escúchalos donde quieras, sin interrupciones.
+            Take your favorite audiobooks with you and listen anywhere, without interruptions.
           </FeatureText>
         </div>
         <div style={styles.featureBottomLeft}>
           <FeatureText Icon={HeartIcon} delay={200}>
-            Sumérgete en audiolibros 3D que te transportan al corazón de la historia.
+            Immerse yourself in 3D audiobooks that place you at the heart of every story.
           </FeatureText>
         </div>
         <div style={styles.featureTopRight}>
           <FeatureText Icon={BoltIcon} delay={400}>
-            Disfruta de resúmenes rápidos, perfectos para cuando tienes poco tiempo.
+            Enjoy quick summaries, perfect for when you’re short on time.
           </FeatureText>
         </div>
         <div style={styles.featureBottomRight}>
           <FeatureText Icon={ArrowTrendingUpIcon} delay={600}>
-          Desarrolla nuevas habilidades y crece a tu ritmo con nuestras rutas de aprendizaje.
+          Build new skills and grow at your pace with curated learning paths.
           </FeatureText>
         </div>
       </div>

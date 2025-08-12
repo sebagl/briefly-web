@@ -130,9 +130,9 @@ function Audiobooks({
   return (
     <>
       <section style={styles.container}>
-        <h2 style={styles.title}>Explora Nuestras Categorías Más Populares</h2>
+        <h2 style={styles.title}>Explore Our Most Popular Categories</h2>
         <p style={styles.subtitle}>
-          Disfruta de una muestra gratuita y desbloquea la experiencia completa al suscribirte.
+          Enjoy a free preview and unlock the full experience with your membership.
         </p>
 
         <div style={styles.categoriesContainer}>
@@ -188,7 +188,7 @@ function Audiobooks({
         </div>
 
         <Button
-          text="Escuchar completo"
+          text="Listen to full audiobook"
           variant="callToAction"
           size="large"
           onClick={handleConvertion}

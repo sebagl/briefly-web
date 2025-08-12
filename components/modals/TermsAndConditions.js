@@ -35,7 +35,7 @@ function TermsAndConditions(props) {
     >
       <Button variant="close" size="large" onClick={handleClose}/>
 
-      <h1 style={{textAlign: 'center'}}>Términos y Condiciones</h1>
+      <h1 style={{textAlign: 'center'}}>Terms and Conditions</h1>
 
       <div style={{overflow: 'scroll'}}>
         <p>

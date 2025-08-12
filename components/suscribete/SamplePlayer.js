@@ -203,7 +203,7 @@ const SamplePlayer = ({ book, onClose, handleConvertion }) => {
               onClose();
             }}
           >
-            Escúchalo completo
+            Listen to the full audiobook
           </button>
         ) : (
           <>

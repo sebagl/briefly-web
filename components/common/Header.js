@@ -86,7 +86,7 @@ function Header(props) {
       <ul className={styles.desktopMenu}>
         {!props.landing && ( <><li>
           <Link href="/#books" className="link">
-      Audiolibros
+      Audiobooks
           </Link>
         </li>
 
@@ -101,7 +101,7 @@ function Header(props) {
           </Link>
         </li>
         <li>
-          <button onClick={toggleContact}>Contacto</button>
+          <button onClick={toggleContact}>Contact</button>
         </li></>)}
         {currentUser 
           ? (
@@ -118,8 +118,8 @@ function Header(props) {
             </div>
           ) : 
           <div style={{display: 'flex', justifyContent: 'space-between', width: '295px'}}>
-            <Button onClick={toggleLogin} size="small" variant="primary" text="Iniciar Sesión" rounded/>						
-            <Button size="small" variant="callToAction" text="Prueba por $0.00" rounded onClick={()=>props.handleConvertion()}/>	
+            <Button onClick={toggleLogin} size="small" variant="primary" text="Log in" rounded/>
+            <Button size="small" variant="callToAction" text="Start free trial" rounded onClick={()=>props.handleConvertion()}/>
           </div>
         
         }

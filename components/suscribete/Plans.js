@@ -260,7 +260,7 @@ const Plans = ({ title, subtitle, shouldSubmit, onSubmit, loading, setLoading, h
         </div>
 
         <div style={styles.renewalText}>
-          Renovación {getRenewalPeriod(plan)}. Puedes cancelar en cualquier momento.
+          Renews {getRenewalPeriod(plan)}. Cancel anytime.
         </div>
         
         <Button 
