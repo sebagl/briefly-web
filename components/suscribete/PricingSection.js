@@ -7,8 +7,8 @@ function PricingSection({ handlePlanSelection, handleConvertion }) {
     <section className={styles['price-list']}>
       <div className={styles['price-cont']}>
         <Plans 
-          title="Elije tu Plan" 
-          subtitle={'Aprovecha la oferta exclusiva en todos nuestros planes y disfruta de audiolibros ilimitados.'}
+          title="Choose Your Plan" 
+          subtitle={'Take advantage of our exclusive offer on all plans and enjoy unlimited audiobooks.'}
           handlePlanSelection={handlePlanSelection}
           handleConvertion={handleConvertion}
         />

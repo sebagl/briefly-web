@@ -59,6 +59,7 @@ const Plans = ({ title, subtitle, shouldSubmit, onSubmit, loading, setLoading, h
       padding: 0,
       boxSizing: 'border-box',
       width: '100%',
+      marginTop: '25px',
     },
     title: {
       margin: '12px',
