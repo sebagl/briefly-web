@@ -159,6 +159,8 @@ header img {
 
 .mobile-menu-container {
 	position: relative;
+    display: inline-flex;
+    align-items: center;
 }
 
 @media (min-width: 1000px) {

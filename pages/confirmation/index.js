@@ -43,20 +43,21 @@ function Confirmation() {
     <div className="loader" style={{ display: 'flex', flexDirection: 'column'}}>
 			
       <p style={{ color: 'white', textAlign: 'center', padding: '1em' }}>
-				Tu pago se ha realizado con éxito, tu membresia ha sido activada.
+				Your payment was successful and your membership is now active.
         <div
           onClick={toggleLogin}
           style={{ color: '#f49231', textAlign: 'center', cursor: 'pointer', fontWeight: 'bold' }}
         >
-					Iniciar Sesión
+						Log in
         </div>
       </p>
       
       <Image
-        src="https://firebasestorage.googleapis.com/v0/b/stream-readers-prod.appspot.com/o/img%2Flogo.png?alt=media&token=078e0fb8-76c4-425a-ac95-532a6ee1fcaa"
-        alt="logo"
-        width={200}
-        height={50}
+        src="/assets/LogoBriefly.png"
+        alt="Briefly logo"
+        width={150}
+        height={100}
+        style={{ width: '140px', height: 'auto' }}
       />
       <AppDownloadButtons />
       <LoginModal isOpen={loginIsOpen} toggle={toggleLogin} />

@@ -107,7 +107,7 @@ function Header(props) {
           ? (
             <div style={{display: 'flex', alignItems: 'center'}}>
               <p className="hola" style={{marginRight: '5px'}}>
-                <span className={styles['orange']}> Hola</span>{' '}
+                <span className={styles['orange']}> Hi</span>{' '}
                 <span style={{color: '#fff'}}>
                   {currentUser && getUsername(currentUser).split(' ')[0]}
                 </span>
@@ -131,10 +131,10 @@ function Header(props) {
                 style={{display: `${isUserMenuVisible ? 'block' : ' hidden'}`}}
               >
                 <li>
-                  <Button size="small" variant="primary" onClick={togglePerfil} text="Perfil"/>
+                  <Button size="small" variant="primary" onClick={togglePerfil} text="Profile"/>
                 </li>
                 <li>
-                  <Button size="small" onClick={handleLogout} variant="primary" text="Cerrar Sesión"/>
+                  <Button size="small" onClick={handleLogout} variant="primary" text="Log out"/>
                 </li>
               </ul>
             ) : null
@@ -166,10 +166,11 @@ function Header(props) {
       <Link href="/">
         <a className={styles.logoHome}>
           <Image
-            src="https://firebasestorage.googleapis.com/v0/b/stream-readers-prod.appspot.com/o/img%2Flogo.png?alt=media&token=078e0fb8-76c4-425a-ac95-532a6ee1fcaa"
-            alt="logo"
-            width={200}
-            height={50}
+            src="/assets/LogoBriefly.png"
+            alt="Briefly logo"
+            width={150}
+            height={100}
+            style={{ width: '100px', height: 'auto' }}
           />
         </a>
       </Link>

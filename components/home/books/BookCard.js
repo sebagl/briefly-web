@@ -29,7 +29,7 @@ const BookCard = (props) => {
     title: {
       fontSize: '16px',
       lineHeight: '24px',
-      color: '#000',
+      color: '#fff',
       margin: '8px 0 4px 0'
     },
     author: {
@@ -46,7 +46,7 @@ const BookCard = (props) => {
     pill: {
       margin: '0 4px',
       padding: '0 8px',
-      background: '#FFF',
+      // background: '#FFF',
       border: '1px solid #F49231',
       color: '#F49231',
       borderRadius: '24px',
@@ -112,7 +112,6 @@ const BookCard = (props) => {
       <p style={styles.author}>{props.author}</p>
       <div style={styles.pillsContainer}>
         <div style={styles.pill}>{props.category}</div>
-        {props.is_3d && <div style={styles.pill}>3D</div>}
       </div>
       <button 
         style={styles.playButton}

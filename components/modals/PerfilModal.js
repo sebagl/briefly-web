@@ -36,11 +36,11 @@ function Perfil(props) {
       >
         <div />
 
-        <h1 className={styles['perfil-form-title']}>Perfil</h1>
+        <h1 className={styles['perfil-form-title']}>Profile</h1>
         <div className={styles['perfil-logo']}>
           <Image
-            src="https://firebasestorage.googleapis.com/v0/b/stream-readers-prod.appspot.com/o/img%2Flogo.png?alt=media&token=078e0fb8-76c4-425a-ac95-532a6ee1fcaa"
-            alt="logo"
+            src="/assets/LogoBriefly.png"
+            alt="Briefly logo"
             height={28}
             width={116}
           />

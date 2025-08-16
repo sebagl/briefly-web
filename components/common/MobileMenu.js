@@ -55,9 +55,9 @@ function MobileMenu(props) {
             {!isActive && <FontAwesomeIcon icon={faBars} />}
           </button>
         ) : !currentUser ? (
-          <Button size="small" variant="callToAction" text="Prueba por $0.00" rounded onClick={() => props.handleConvertion()} />
+          <Button size="small" variant="callToAction" text="Start for $0.00" rounded onClick={() => props.handleConvertion()} />
         ) : currentUser && !stripeRole ? (
-          <Button size="small" variant="callToAction" text="Completa el Pago" rounded onClick={() => props.handleConvertion()} />
+          <Button size="small" variant="callToAction" text="Complete payment" rounded onClick={() => props.handleConvertion()} />
         ) : (
           null
         )
@@ -70,13 +70,13 @@ function MobileMenu(props) {
         <ul>
           <li>
             <Link href="/#books" className="link">
-							AUDIOLIBROS
+								AUDIOBOOKS
             </Link>
           </li>
           {!currentUser && (
             <li className={`${!currentUser ? '' : 'hidden'}`}>
               <Link href="/suscribete" className="link">
-								SUSCRÍBETE
+								SUBSCRIBE
               </Link>
             </li>
           )}
@@ -87,24 +87,24 @@ function MobileMenu(props) {
           </li>
           <li>
             <Link href="/autores" className="link">
-							AUTORES
+								AUTHORS
             </Link>
           </li>
           <li>
-            <button style={{fontWeight: 'bold'}} onClick={handleContact}>CONTACTO</button>
+            <button style={{fontWeight: 'bold'}} onClick={handleContact}>CONTACT</button>
           </li>
           {currentUser ? (
             <>
               <li>
-                <button onClick={handlePerfil}>PERFIL</button>
+                <button onClick={handlePerfil}>PROFILE</button>
               </li>
               <li>
-                <button onClick={handleLogout}>CERRAR SESIÓN</button>
+                <button onClick={handleLogout}>LOG OUT</button>
               </li>
             </>
           ) : (
             <li>
-              <Button onClick={props.toggleLogin} size="small" variant="primary" text="INICIAR SESIÓN" rounded/>
+              <Button onClick={props.toggleLogin} size="small" variant="primary" text="LOG IN" rounded/>
             </li>
           )
           }

@@ -53,7 +53,7 @@ function LandingActions({ handleConvertion, screenSize, rutas = [], currentRutaI
       background: 'linear-gradient(to right, #F69333, #FCCE18)',
       WebkitBackgroundClip: 'text',
       WebkitTextFillColor: 'transparent',
-      margin: '0',
+      margin: '5px',
       padding: '0',
     },
     de: {
@@ -100,7 +100,7 @@ function LandingActions({ handleConvertion, screenSize, rutas = [], currentRutaI
     },
     button: {
       borderRadius: '30px',
-      height: '60px',
+      height: '50px',
       width: '250px',
       fontWeight: 'bold',
     },
@@ -133,31 +133,7 @@ function LandingActions({ handleConvertion, screenSize, rutas = [], currentRutaI
     <div style={styles.container}>
       <h2 style={styles.discount}>BESTSELLERS</h2>
       <h4 style={styles.planAnual}>Summarized as audiobooks</h4>
-      <div style={styles.categoryWrapper}>
-       
-        <div style={styles.categoryContainer}>
-          {rutas.length > 0 ? (
-            <div 
-              key={currentRutaIndex} 
-              style={{
-                ...styles.categoryText,
-                ...styles.descuento,
-              }}
-            >
-              {currentCategory?.title}
-            </div>
-          ) : (
-            <div 
-              style={{
-                ...styles.categoryText,
-                ...styles.descuento,
-              }}
-            >
-              Loading...
-            </div>
-          )}
-        </div>
-      </div>
+   
       
       <p style={styles.description}>Unlimited access to exclusive content</p>
       <p style={styles.price}>Start your 7-day free trial</p>

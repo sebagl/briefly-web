@@ -25,13 +25,14 @@ function Contact(props) {
 					X
         </button>
 
-        <h1 className={styles['contact-form-title']}>Envíanos un mensaje</h1>
+        <h1 className={styles['contact-form-title']}>Send us a message</h1>
         <div className={styles['contact-logo']}>
           <Image
-            src="https://firebasestorage.googleapis.com/v0/b/stream-readers-prod.appspot.com/o/img%2Flogo.png?alt=media&token=078e0fb8-76c4-425a-ac95-532a6ee1fcaa"
-            alt="logo"
-            height={28}
-            width={116}
+            src="/assets/LogoBriefly.png"
+            alt="Briefly logo"
+            width={150}
+            height={100}
+            style={{ width: '100px', height: 'auto' }}
           />
         </div>
       </div>

@@ -32,14 +32,14 @@ function PerfilForm(props) {
       {(formik) => {
         return (
           <Form className="login-form">
-            {isSubmited && <p>Tu perfil se actualizó con éxito</p>}
+            {isSubmited && <p>Your profile was updated successfully</p>}
 
             <p className="item-perfil">
               <strong>Email: </strong>
               {currentUser.email}
             </p>
             <p className="item-perfil">
-              <strong>Membresía: </strong>
+              <strong>Membership: </strong>
 							Mensual
             </p>
             <p className="item-perfil">
@@ -47,7 +47,7 @@ function PerfilForm(props) {
               {currentUser.metadata.creationTime}
             </p>
 						
-            <Button size="small" onClick={props.handleCancel} text="Cancelar membresía" variant="primary"/>
+            <Button size="small" onClick={props.handleCancel} text="Cancel membership" variant="primary"/>
           </Form>
         );
       }}

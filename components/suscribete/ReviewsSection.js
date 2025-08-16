@@ -46,23 +46,23 @@ function ReviewsSection() {
 
   const reviewsData = [
     {
-      review: 'There is no better way to enjoy my daily commute. The 3D audiobooks are amazing!',
-      userName: 'Julia - Mexico',
+      review: 'There is no better way to enjoy my daily commute. The summaries are amazing!',
+      userName: 'John - NYC',
       subscription: 'Annual member'
     },
     {
-      review: 'The audio quality and 3D audiobook selection are the best. It feels like being inside the story—truly immersive.',
-      userName: 'Fatima - Argentina',
+      review: 'The audio quality and audiobook selection are the best. It feels like being inside the story—truly immersive.',
+      userName: 'Peter - Boston',
       subscription: 'Monthly member'
     },
     {
-      review: 'Thanks to the learning paths, I improved in finance and personal growth. Best investment I made this year.',
-      userName: 'Ricardo - Chile',
+      review: 'Thanks to Briefly, I improved in finance and personal growth. Best investment I made this year.',
+      userName: 'Anne - Chicago',
       subscription: 'Monthly member'
     },
     {
       review: 'I love the flexibility. I can listen to my favorite books anywhere.',
-      userName: 'Facundo - Argentina',
+      userName: 'Claude - Kansas City',
       subscription: 'Annual member'
     }
   ];

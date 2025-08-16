@@ -7,7 +7,7 @@ function AppDownloadButtons() {
   const appleButton = (
     <Link href="https://apps.apple.com/app/id6468820318" >
       <a target="_blank" rel="noopener noreferrer" >
-        <Image alt="appleBtn" src={'/assets/app-store-badge.svg'} height={70} width={200}/>
+        <Image alt="appleBtn" src={'/assets/apple-app.png'} height={70} width={200}/>
       </a>
     </Link>
   );
@@ -15,7 +15,7 @@ function AppDownloadButtons() {
   const androidButton = (
     <Link href="https://play.google.com/store/apps/details?id=app.stream_readers" >
       <a target="_blank" rel="noopener noreferrer" >
-        <Image alt="androidBtn" src={'/assets/google-play-badge.png'} height={70} width={200}/>
+        <Image alt="androidBtn" src={'/assets/android-app.png'} height={70} width={200}/>
       </a>
     </Link>
   );

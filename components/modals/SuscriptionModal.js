@@ -43,9 +43,9 @@ function Suscription(props) {
       
       setShowPlans(false);
       if (error.code === 'auth/email-already-in-use') {
-        setError('Este correo ya está en uso. Inicia Sesión');
+        setError('This email is already in use. Please log in');
       } else {
-        setError('Ha ocurrido un error, inténtalo nuevamente');
+        setError('Something went wrong. Please try again');
         console.error(error);
       }
     }
@@ -64,7 +64,7 @@ function Suscription(props) {
       await googleSignin();
 
     } catch (error) {
-      setError('Ha ocurrido un error, inténtalo nuevamente');   
+      setError('Something went wrong. Please try again');   
     }
   
     setLoading(false);
@@ -127,7 +127,7 @@ function Suscription(props) {
         <div/>
 					
         <div className={styles['suscription-form-title']}>
-				¡Prueba 7 días gratis!<br /> Acceso <br /><span style={{color: '#f49231'}}>ILIMITADO</span>
+				Start your 7-day <br /> free trial!<br /> <span style={{color: '#f49231'}}>UNLIMITED ACCESS</span>
 
         </div>
       </div>
@@ -136,7 +136,7 @@ function Suscription(props) {
       >
         {showPlans ? (
           <Plans 
-            title="Elije tu Plan" 
+            title="Choose your plan" 
             shouldSubmit 
             loading={loading} 
             setLoading={setLoading}
@@ -150,12 +150,12 @@ function Suscription(props) {
               setFormValues={setFormValues} 
               onSubmit={handleSubmit}
             />
-            <p style={{fontSize: '16px'}}>Ya tienes cuenta? {' '}
+            <p style={{fontSize: '16px'}}>Already have an account? {' '}
               <span
                 onClick={handleLogin}
                 style={{ color: '#f49231', textAlign: 'center', cursor: 'pointer'}}
               >
-                Inicia Sesión
+						Log in
               </span>
             </p>
           </>

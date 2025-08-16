@@ -29,7 +29,7 @@ function IconSectionLanding({ screenSize, handleConvertion }) {
     {
       icon: SpeakerWaveIcon,
       alt: '3D sound',
-      text: 'Immersive 3D audio'
+      text: 'Immersive audio'
     },
     {
       icon: SparklesIcon,

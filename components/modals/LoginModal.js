@@ -53,10 +53,11 @@ function Login(props) {
 		
         <div className={styles['login-logo']}>
           <Image
-            src="https://firebasestorage.googleapis.com/v0/b/stream-readers-prod.appspot.com/o/img%2Flogo.png?alt=media&token=078e0fb8-76c4-425a-ac95-532a6ee1fcaa"
-            alt="logo"
-            height={28}
-            width={116}
+            src="/assets/LogoBriefly.png"
+            alt="Briefly logo"
+            width={150}
+            height={100}
+            style={{ width: '100px', height: 'auto' }}
           />
         </div>
       </div>
@@ -65,13 +66,13 @@ function Login(props) {
       >
         {showLoginForm ? (
           <Fragment>
-            <h2>Inicia Sesión</h2>
+            <h2>Log in</h2>
             <LoginForm />
             <button
               className={styles['login-forgotBtn']}
               onClick={showForgotForm}
             >
-							¿Olvidaste tu contraseña?
+						Forgot your password?
             </button>
           </Fragment>
         ) : (

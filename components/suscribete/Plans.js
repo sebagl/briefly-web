@@ -14,21 +14,27 @@ const Plans = ({ title, subtitle, shouldSubmit, onSubmit, loading, setLoading, h
     </span>;
 
   const prices = {
-    Mensual: 'USD 2.95',
-    Trimestral: 'USD 1.95',
-    Anual: 'USD 0.95',
+    Mensual: 'USD 6.99',
+    Trimestral: 'USD 5.00',
+    Anual: 'USD 2.50',
   };
 
   const priceCodes = {
-    Mensual: 'price_1MhdSMKaapf4iiq0OVrASYgc',
-    Trimestral: 'price_1O4nxaKaapf4iiq08gu5QgSa',
-    Anual: 'price_1O4o46Kaapf4iiq0ish0wEur',
+    Mensual: 'price_1RwU6LKaapf4iiq0Yi13t1zs',
+    Trimestral: 'price_1RwU2jKaapf4iiq0y8KSWNak',
+    Anual: 'price_1RwTyHKaapf4iiq01pfVDpOG',
   };
 
   const discounts = {
-    Mensual: '45%',
-    Trimestral: '66%',
-    Anual: '77%',
+    Mensual: '30%',
+    Trimestral: '50%',
+    Anual: '75%',
+  };
+
+  const planDisplay = {
+    Mensual: 'Monthly',
+    Trimestral: 'Quarterly',
+    Anual: 'Annual',
   };
 
   const handleSubmit = async () => {
@@ -197,11 +203,11 @@ const Plans = ({ title, subtitle, shouldSubmit, onSubmit, loading, setLoading, h
   const getRenewalPeriod = (plan) => {
     switch(plan) {
     case 'Mensual':
-      return 'mensual';
+      return 'monthly';
     case 'Trimestral':
-      return 'trimestral';
+      return 'quarterly';
     case 'Anual':
-      return 'anual';
+      return 'annually';
     default:
       return '';
     }
@@ -218,13 +224,13 @@ const Plans = ({ title, subtitle, shouldSubmit, onSubmit, loading, setLoading, h
       }}>
        
         <div style={styles.exclusiveOfferLegend}>
-            Oferta exclusiva web
+            Exclusive online offer
         </div>
        
 
         {plan === 'Anual' && (
           <div style={styles.recommendedLegend}>
-            Recomendado
+            Recommended
           </div>
         )}
 
@@ -238,25 +244,25 @@ const Plans = ({ title, subtitle, shouldSubmit, onSubmit, loading, setLoading, h
                 ...(plan === planType ? styles.activePlanButton : {})
               }}
             >
-              {planType}
+              {planDisplay[planType]}
             </button>
           ))}
         </div>
 
-        <h2 style={styles.planTitle}>Plan {plan}</h2>
+        <h2 style={styles.planTitle}>{planDisplay[plan]} Plan</h2>
 
         <div style={styles.discountText}>
-          {discounts[plan]} de descuento
+          {discounts[plan]} off
         </div>
 
         <div style={styles.priceDisplay}>
           <div style={styles.discountedPrice}>
-            {prices[plan]}<span style={styles.pricePerMonth}>{' '}/mes</span>
+            {prices[plan]}<span style={styles.pricePerMonth}>{' '}/month</span>
           </div>
         </div>
 
         <div style={styles.regularPrice}>
-          Precio regular: USD 5 /mes
+          Regular price: USD 10 /month
         </div>
 
         <div style={styles.renewalText}>
@@ -264,7 +270,7 @@ const Plans = ({ title, subtitle, shouldSubmit, onSubmit, loading, setLoading, h
         </div>
         
         <Button 
-          text="Prueba 7 días gratis" 
+          text="Start 7‑day free trial" 
           variant="callToAction" 
           size="medium" 
           onClick={handleSubmit} 

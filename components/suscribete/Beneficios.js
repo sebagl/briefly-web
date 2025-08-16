@@ -127,8 +127,8 @@ const Beneficios = () => {
       </h2>
       <div style={styles.imageContainer}>
         <Image
-          src="https://firebasestorage.googleapis.com/v0/b/stream-readers-prod.appspot.com/o/img%2Fsr_app.png?alt=media&token=86a7d4b9-7612-4c9f-a7c1-d3d644965ac9"
-          alt="Stream Readers App"
+          src="/assets/iphone-app.png"
+          alt="Briefly App"
           width={250}
           height={500}
           style={styles.image}
@@ -140,7 +140,7 @@ const Beneficios = () => {
         </div>
         <div style={styles.featureBottomLeft}>
           <FeatureText Icon={HeartIcon} delay={200}>
-            Immerse yourself in 3D audiobooks that place you at the heart of every story.
+            Immerse yourself in audiobooks that place you at the heart of every story.
           </FeatureText>
         </div>
         <div style={styles.featureTopRight}>

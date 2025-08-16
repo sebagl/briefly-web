@@ -27,7 +27,7 @@ function LoginForm(props) {
       const userCredential = await googleSignin();
       await authenticateUser(userCredential);
     } catch (error) {
-      setError('Ha ocurrido un error, inténtalo nuevamente');   
+      setError('Something went wrong. Please try again.');   
     }
   
     setLoading(false);
@@ -73,18 +73,18 @@ function LoginForm(props) {
               className="text-input"
               control="input"
               type="email"
-              label="Correo Electrónico"
+              label="Email"
               name="email"
             />
             <FormikControl
               className="text-input"
               control="input"
               type="password"
-              label="Contraseña"
+              label="Password"
               name="password"
             />
             <div style={{margin: '15px', display: 'flex', justifyContent: 'center'}}>
-              <Button text="Enviar" size="small" onClick={onSubmit}/>
+              <Button text="Submit" size="small" onClick={onSubmit}/>
             </div>
           </Form>
         );

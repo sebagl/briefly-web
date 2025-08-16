@@ -39,10 +39,10 @@ function RegistrationForm(props) {
       props.setShowPlans(true);
       
     } catch (error) {
-      if (error.code === 'auth/email-already-in-use') {
-        setError('Este correo ya está en uso. Inicia Sesión');
+        if (error.code === 'auth/email-already-in-use') {
+        setError('This email is already in use. Please log in');
       } else {
-        setError('Ha ocurrido un error, inténtalo nuevamente');
+        setError('Something went wrong. Please try again');
       }
     }
   
@@ -60,7 +60,7 @@ function RegistrationForm(props) {
       await googleSignin();
 
     } catch (error) {
-      setError('Ha ocurrido un error, inténtalo nuevamente');   
+      setError('Something went wrong. Please try again');   
     }
   
     setLoading(false);
@@ -78,15 +78,15 @@ function RegistrationForm(props) {
   };
 
   const validationSchema = Yup.object({
-    name: Yup.string().required('Campo requerido'),  // validate name if it's required
+    name: Yup.string().required('Required'),  // validate name if it's required
     email: Yup.string()
-      .email('Formato de e-mail incorrecto')
-      .required('Campo requerido'),
-    password: Yup.string().required('Campo requerido'),
+      .email('Invalid email format')
+      .required('Required'),
+    password: Yup.string().required('Required'),
     passwordConfirmation: Yup.string()
-      .oneOf([Yup.ref('password'), null], 'Las contraseñas deben coincidir')
-      .required('Campo requerido'),
-    acceptTerms: Yup.bool().oneOf([true], 'Debe aceptar los términos y condiciones y la política de privacidad').required('Campo requerido'),
+      .oneOf([Yup.ref('password'), null], 'Passwords must match')
+      .required('Required'),
+    acceptTerms: Yup.bool().oneOf([true], 'You must accept the terms and the privacy policy').required('Required'),
   });
 
   const submitForm = (values) => {
@@ -97,7 +97,7 @@ function RegistrationForm(props) {
 
   return (
     <>
-      <h3 style={{padding: '0 5px'}}>Para comenzar, vamos a crear tu cuenta</h3>
+      <h3 style={{padding: '0 5px'}}>Let’s create your account</h3>
 
       <Formik
         initialValues={initialValues}
@@ -118,28 +118,28 @@ function RegistrationForm(props) {
                 className="text-input"
                 control="input"
                 type="text"
-                label="Nombre"
+                label="Name"
                 name="name"
               />
               <FormikControl
                 className="text-input"
                 control="input"
                 type="email"
-                label="Correo Electrónico"
+                label="Email"
                 name="email"
               />
               <FormikControl
                 className="text-input"
                 control="input"
                 type="password"
-                label="Contraseña"
+                label="Password"
                 name="password"
               />
               <FormikControl
                 className="text-input"
                 control="input"
                 type="password"
-                label="Confirma Contraseña"
+                label="Confirm Password"
                 name="passwordConfirmation"
               />
               <div style={{ display: 'flex', alignItems: 'flex-start', marginTop: '20px', fontSize: '12px' }}>
@@ -150,16 +150,16 @@ function RegistrationForm(props) {
                   style={{marginRight: '5px'}}
                 />
                 <div style={{float: 'left', margin:0}}>
-                  Acepto los 
-                  <a onClick={toggleTerms} style={{cursor: 'pointer', color: 'grey', textDecoration: 'underline'}}> Términos y Condiciones </a> 
-                   y la 
-                  <a onClick={togglePrivacy} style={{cursor: 'pointer', color: 'grey', textDecoration: 'underline'}}> Política de Privacidad </a>
+                  I accept the 
+                  <a onClick={toggleTerms} style={{cursor: 'pointer', color: 'grey', textDecoration: 'underline'}}> Terms and Conditions </a> 
+                   and the 
+                  <a onClick={togglePrivacy} style={{cursor: 'pointer', color: 'grey', textDecoration: 'underline'}}> Privacy Policy </a>
                 </div>
               </div>
               <ErrorMessage name="acceptTerms" component="div" style={{ color: 'red', fontSize: '12px' }} />
               {props.error && <div style={{ color: 'red', fontSize: '12px' }}>{props.error}</div>}
               <div style={{margin: '15px', display: 'flex', justifyContent: 'center'}}>
-                <Button disabled={props.loading} type="submit" style={{fontSize: '16px'}} text="Crea tu cuenta" size="medium" rounded />
+                <Button disabled={props.loading} type="submit" style={{fontSize: '16px'}} text="Create account" size="medium" rounded />
               </div>
               {props.loading && <CircularProgress/> }
             </Form>

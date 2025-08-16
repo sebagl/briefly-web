@@ -38,81 +38,81 @@ function PrivacyPolicy(props) {
 
       <div style={{overflow: 'scroll'}}>
         <p>
-        En Stream Readers, LLC (en adelante, "nosotros" o "nuestra"), nos comprometemos a proteger su privacidad y asegurar la confidencialidad de la información personal que nos proporcione al utilizar nuestra plataforma de audiolibros en español, llamada Stream Readers (en adelante, la "Plataforma"). Esta Política de Privacidad establece cómo recopilamos, utilizamos y protegemos su información personal. Al acceder y utilizar nuestra Plataforma, acepta los términos descritos en esta política.
+        At Stream Readers, LLC (hereinafter, "we" or "our"), we are committed to protecting your privacy and ensuring the confidentiality of the personal information you provide when using our audiobook platform, called Briefly (the "Platform"). This Privacy Policy explains how we collect, use, and protect your personal information. By accessing and using our Platform, you agree to the terms described in this policy.
         </p>
         <ol>
-          <li>Información personal recopilada.<br/>
-                1.1. Al registrarse en nuestra Plataforma, recopilaremos su primer nombre y dirección de correo electrónico. Estos datos son necesarios para crear y gestionar su cuenta en Stream Readers.
+          <li>Personal information collected.<br/>
+                1.1. When you register on our Platform, we will collect your first name and email address. This data is necessary to create and manage your account on the Platform.
           </li>
-          <li>Uso de la información.<br/>
-                2.1. Utilizaremos su información personal con los siguientes propósitos:<br/>
-                a) Procesar su registro y administrar su cuenta en nuestra Plataforma.<br/>
-                b) Proporcionarle acceso ilimitado a nuestro contenido de audiolibros.<br/>
-                c) Enviarle comunicaciones relacionadas con el servicio, como confirmaciones de pago, actualizaciones o cambios en la Plataforma.<br/>
-                d) Realizar actividades de marketing, incluido el envío de mensajes promocionales y ofertas especiales sobre nuestros productos y servicios, tanto por correo electrónico como por otros medios de comunicación.
-          </li>
-          <li>
-            Almacenamiento y protección de la información<br/>
-                3.1. Toda la información personal recopilada se almacenará en servidores seguros y se tratará de acuerdo con las mejores prácticas y medidas de seguridad apropiadas para protegerla contra el acceso no autorizado, la divulgación o la alteración.<br/>
-                3.2. No vendemos ni compartimos su información personal con terceros no afiliados, excepto en los casos necesarios para el funcionamiento de nuestra Plataforma y el cumplimiento de la ley.
+          <li>Use of information.<br/>
+                2.1. We will use your personal information for the following purposes:<br/>
+                a) To process your registration and manage your account on our Platform.<br/>
+                b) To provide you with unlimited access to our audiobook content.<br/>
+                c) To send you service-related communications, such as payment confirmations, updates, or changes to the Platform.<br/>
+                d) To conduct marketing activities, including sending promotional messages and special offers about our products and services, by email and other communication channels.
           </li>
           <li>
-            Cookies y tecnologías similares.<br/>
-                4.1. Utilizamos cookies y tecnologías similares para mejorar su experiencia en la Plataforma y recopilar datos estadísticos sobre el uso de nuestros servicios. Estas tecnologías pueden recopilar información sobre su dispositivo, como su dirección IP, tipo de navegador y páginas visitadas. Puede gestionar las preferencias de cookies en la configuración de su navegador.
+            Storage and protection of information<br/>
+                3.1. All personal information collected will be stored on secure servers and handled in accordance with best practices and appropriate security measures to protect it against unauthorized access, disclosure, or alteration.<br/>
+                3.2. We do not sell or share your personal information with unaffiliated third parties, except as necessary for the operation of our Platform and compliance with the law.
           </li>
           <li>
-            Enlaces a sitios web de terceros.<br/>
-                5.1. Nuestra Plataforma puede contener enlaces a sitios web de terceros. No nos hacemos responsables de las prácticas de privacidad de dichos sitios y le recomendamos revisar las políticas de privacidad de cada sitio web que visite.
+            Cookies and similar technologies.<br/>
+                4.1. We use cookies and similar technologies to enhance your experience on the Platform and to collect statistical data about how our services are used. These technologies may collect information about your device, such as your IP address, browser type, and pages visited. You can manage cookie preferences in your browser settings.
           </li>
           <li>
-            Derechos del titular de los datos<br/>
-                6.1. Usted tiene derechos sobre su información personal y puede ejercer los siguientes derechos:<br/>
-                a) Acceder, corregir o actualizar su información personal.<br/>
-                b) Solicitar la eliminación de su información personal, sujeto a nuestras obligaciones legales y operativas.<br/>
-                c) Retirar su consentimiento para el procesamiento de su información personal.<br/>
-                d) Oponerse al procesamiento de su información personal para fines de marketing directo.<br/>
-                e) Solicitar la limitación del procesamiento de su información personal.<br/>
+            Links to third‑party websites.<br/>
+                5.1. Our Platform may contain links to third‑party websites. We are not responsible for the privacy practices of such sites and recommend that you review the privacy policies of each website you visit.
           </li>
           <li>
-            Cambios en la política de privacidad.<br/>
-                7.1. Podemos actualizar esta Política de Privacidad ocasionalmente para reflejar cambios en nuestras prácticas y servicios. Le notificaremos cualquier cambio relevante publicando la versión actualizada en nuestra Plataforma.
+            Data subject rights<br/>
+                6.1. You have rights over your personal information and may exercise the following rights:<br/>
+                a) Access, correct, or update your personal information.<br/>
+                b) Request deletion of your personal information, subject to our legal and operational obligations.<br/>
+                c) Withdraw your consent to the processing of your personal information.<br/>
+                d) Object to the processing of your personal information for direct marketing purposes.<br/>
+                e) Request restriction of the processing of your personal information.<br/>
           </li>
           <li>
-            Solicitud de Eliminación de Cuenta y Datos Asociados.<br/>
-            8.1. Si desea solicitar la eliminación de su cuenta y de los datos asociados, por favor, siga los pasos a continuación:
-              a) Envíe un correo electrónico a contacto@streamreaders.com con el asunto “Solicitud de Eliminación de Cuenta”.
-              b) Incluya su nombre de usuario y cualquier otra información necesaria para identificar su cuenta.
-              c) Nuestro equipo de soporte confirmará la recepción de su solicitud e iniciará el proceso de eliminación de la cuenta.
+            Changes to the privacy policy.<br/>
+                7.1. We may update this Privacy Policy from time to time to reflect changes in our practices and services. We will notify you of any material changes by posting the updated version on our Platform.
+          </li>
+          <li>
+            Request to delete account and associated data.<br/>
+            8.1. If you would like to request deletion of your account and associated data, please follow the steps below:
+              a) Send an email to contacto@streamreaders.com with the subject “Account Deletion Request”.
+              b) Include your username and any other information necessary to identify your account.
+              c) Our support team will confirm receipt of your request and begin the account deletion process.
               
-            8.2. Detalles de la Eliminación de Datos:
-              a) Una vez recibida una solicitud de eliminación válida, eliminaremos su cuenta y los datos asociados dentro de 1 semana.
+            8.2. Details of data deletion:
+              a) Once a valid deletion request is received, we will delete your account and associated data within 1 week.
 
-            8.3. Para cualquier pregunta o inquietud adicional, por favor, póngase en contacto con nuestro equipo de soporte en contacto@streamreaders.com.
+            8.3. For any additional questions or concerns, please contact our support team at contacto@streamreaders.com.
           </li>
           <li>
-          Información Financiera.<br/>
+          Financial Information.<br/>
             
-            9.1. Utilizamos Stripe, un proveedor de servicios de pago externo, para procesar las transacciones en nuestra Plataforma. Al realizar un pago, se le pedirá que proporcione cierta información financiera, como el número de su tarjeta de crédito y la fecha de vencimiento. Esta información se recopila y almacena de forma segura directamente por Stripe, y no tenemos acceso a la información de su tarjeta de crédito.
+            9.1. We use Stripe, a third‑party payment service provider, to process transactions on our Platform. When making a payment, you will be asked to provide certain financial information, such as your credit card number and expiration date. This information is collected and securely stored directly by Stripe, and we do not have access to your credit card information.
 
-            9.2. Stripe utiliza y procesa su información financiera de acuerdo con su propia política de privacidad. Le recomendamos que revise la política de privacidad de Stripe para obtener más información sobre cómo se maneja y protege su información financiera.
+            9.2. Stripe uses and processes your financial information in accordance with its own privacy policy. We recommend that you review Stripe’s privacy policy for more information on how your financial information is handled and protected.
 
-            9.3. Utilizamos la información financiera proporcionada por Stripe (como el historial de transacciones) para facturarle por nuestros servicios y gestionar su cuenta.
+            9.3. We use financial information provided by Stripe (such as transaction history) to bill you for our services and manage your account.
 
-            9.4. Aceptamos tambien pagos en dispositivos Android e iOS utilizando los servicios de procesamiento de pagos de esas plataformas.
+            9.4. We also accept payments on Android and iOS devices using those platforms’ payment processing services.
           </li>
           <li>
-          Suscripción y acceso al contenido.<br/>
+          Subscription and access to content.<br/>
             
-            10.1. Al registrarse en nuestra Plataforma, usted obtiene una suscripción que le brinda acceso ilimitado a nuestro contenido de audiolibros en español.
+            10.1. When you register on our Platform, you obtain a subscription that grants you unlimited access to our audiobook content.
 
-            10.2. Los planes de suscripción disponibles son los siguientes:<br/>
-                - **Suscripción Mensual 
-                - **Suscripción Trimestral 
-                - **Suscripción Anual
+            10.2. The available subscription plans are:<br/>
+                - Monthly Subscription
+                - Quarterly Subscription
+                - Annual Subscription
 
-            10.3. Usted es responsable de mantener la confidencialidad de su cuenta y de todas las actividades que ocurran bajo su nombre de usuario y contraseña.
+            10.3. You are responsible for maintaining the confidentiality of your account and for all activity that occurs under your username and password.
 
-            10.4. Nos reservamos el derecho de suspender o cancelar su cuenta en caso de violación de estos términos y condiciones o de cualquier conducta que consideremos inapropiada.
+            10.4. We reserve the right to suspend or cancel your account in the event of a violation of these terms and conditions or any conduct we deem inappropriate.
           </li>
         </ol>
       </div>

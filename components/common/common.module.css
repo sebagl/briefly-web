@@ -161,15 +161,22 @@
 }
 
 .desktopMenu > li {
-	font-family: Montserrat;
-	margin-left: 12px;
-	margin-right: 12px;
-	font-size: 14px;
-	text-decoration: none;
-	color: white;
-	display: block;
-	padding-right: 5px;
-	letter-spacing: 0.5px;
+    font-family: Montserrat;
+    margin-left: 12px;
+    margin-right: 12px;
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+	display: flex;
+	align-items: center;
+    padding-right: 5px;
+    letter-spacing: 0.5px;
+}
+
+/* Ensure non-li button container (login/trial) centers vertically too */
+.desktopMenu > div {
+	display: flex;
+	align-items: center;
 }
 
 .desktopMenu > li:nth-last-child(-n + 3) {
@@ -443,7 +450,7 @@
 	}
 
 	.logoHome {
-		width: 130px;
+		width: 100px;
 	}
 
 

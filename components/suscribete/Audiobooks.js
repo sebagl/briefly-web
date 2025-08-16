@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import { CircularProgress } from '@mui/material';
@@ -17,6 +17,15 @@ function Audiobooks({
   playingBook 
 }) {
   const categories = useCategorizedBooks(books, progressData);
+  const shuffledCategories = useMemo(() => {
+    const base = (categories || []).filter(category => category.displayName !== 'Todo');
+    const arr = [...base];
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr;
+  }, [categories]);
   const [selectedCategory, setSelectedCategory] = useState('');
 
   const styles = {
@@ -48,7 +57,7 @@ function Audiobooks({
       padding: '10px 20px',
       paddingRight: '40px',
       maxWidth: '1200px',
-      width: '100%',
+      width: '80%',
       marginBottom: '30px',
       '-webkit-overflow-scrolling': 'touch',
       scrollbarWidth: 'none',
@@ -98,10 +107,10 @@ function Audiobooks({
 
   // Set initial category using displayName
   useEffect(() => {
-    if (categories.length > 0 && !selectedCategory) {
-      setSelectedCategory(categories[0]?.displayName);
+    if (shuffledCategories.length > 0 && !selectedCategory) {
+      setSelectedCategory(shuffledCategories[0]?.displayName);
     }
-  }, [categories]);
+  }, [shuffledCategories, selectedCategory]);
 
   const responsive = {
     desktop: {
@@ -136,8 +145,7 @@ function Audiobooks({
         </p>
 
         <div style={styles.categoriesContainer}>
-          {categories
-            .filter(category => category.displayName !== 'Todo')
+          {shuffledCategories
             .map((category) => (
               <button
                 key={category.displayName}
@@ -157,7 +165,7 @@ function Audiobooks({
             <CircularProgress />
           ) : error ? (
             <div style={{ color: 'white', textAlign: 'center' }}>
-              Ha ocurrido un error, intentalo nuevamente
+              Something went wrong. Please try again.
             </div>
           ) : (
             <div style={styles.carouselWrapper}>

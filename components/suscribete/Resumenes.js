@@ -57,7 +57,7 @@ const AnimatedBanner = ({ screenSize }) => {
   return (
     <div ref={bannerRef} style={styles.banner}>
       <div ref={textRef} style={styles.text}>
-        ¡Prueba por 7 días gratis! Tu próxima historia está aquí, esperando por ti.
+        Start your 7-day free trial! Your next story is waiting.
       </div>
     </div>
   );
@@ -150,9 +150,8 @@ const Resumenes = ({
       fontWeight: 'bold',
     },
     subtitle: {
-      fontSize: screenSize === 'small' ? '0.8rem' : '1rem',
+      fontSize: '1rem',
       color: 'white',
-      marginBottom: '3rem',
       textAlign: 'center',
     },
     imagesContainer: {
@@ -224,10 +223,10 @@ const Resumenes = ({
       <div ref={containerRef} style={styles.container}>
         <h2 ref={titleRef} style={styles.title}>Summaries</h2>
         <p style={styles.subtitle}>
-          Descubre los puntos clave de los libros más conocidos en formato de resúmenes.
+          Discover key takeaways from the most popular books in concise summaries.
         </p>
 
-        <div style={styles.categoriesContainer}>
+        {/* <div style={styles.categoriesContainer}>
           {rutas.map((ruta) => (
             <button
               key={ruta.id}
@@ -240,9 +239,9 @@ const Resumenes = ({
               {ruta.title}
             </button>
           ))}
-        </div>
+        </div> */}
 
-        <div style={styles.booksContainer}>
+        {/* <div style={styles.booksContainer}>
           {loading ? (
             <CircularProgress />
           ) : error ? (
@@ -275,14 +274,14 @@ const Resumenes = ({
               </Carousel>
             </div>
           )}
-        </div>
+        </div> */}
 
         <div style={styles.imagesContainer}>
-          <img
+          {/* <img
             src="https://firebasestorage.googleapis.com/v0/b/stream-readers-prod.appspot.com/o/img%2Fcuatro_portadas.png?alt=media&token=db23b3ba-b62f-4efe-a8a3-173d9996dffb"
             alt="Book covers"
             style={{ ...styles.image, ...styles.leftImage }}
-          />
+          /> */}
           <img
             src="https://firebasestorage.googleapis.com/v0/b/stream-readers-prod.appspot.com/o/img%2Fapp_mano.png?alt=media&token=b83b8cdb-74f1-41c6-870b-bf90e8a466c2"
             alt="App in hand"
@@ -291,7 +290,7 @@ const Resumenes = ({
         </div>
         
         <Button 
-          text={'Explora los resúmenes'} 
+          text={'Explore summaries'} 
           onClick={handleConvertion} 
           style={{marginTop: '30px', fontSize: '18px', borderRadius: '50px', position: 'relative', bottom: '40px'}} 
           size="large" 

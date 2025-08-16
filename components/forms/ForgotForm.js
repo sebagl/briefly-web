@@ -51,7 +51,7 @@ function ForgotForm(props) {
               control="input"
               // control='chakraInput'
               type="email"
-              label="Correo Electrónico"
+              label="Email"
               name="email"
             />
 
@@ -60,7 +60,7 @@ function ForgotForm(props) {
               type="submit"
               disabled={!formik.isValid || loading}
             >
-							Enviar
+								Submit
             </button>
           </Form>
         );

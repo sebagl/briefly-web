@@ -64,10 +64,11 @@ function HeaderAutores() {
         <Link href={'/'}>
           <a>
             <Image
-              src="https://firebasestorage.googleapis.com/v0/b/stream-readers-prod.appspot.com/o/img%2Flogo_gris.png?alt=media&token=68328d09-77e8-4503-a0fc-b36f3a656a51"
-              alt="logo"
-              width={200}
-              height={75}
+              src="/assets/LogoBriefly.png"
+              alt="Briefly logo"
+              width={150}
+              height={100}
+              style={{ width: '140px', height: 'auto' }}
             />
           </a>
         </Link>

@@ -26,10 +26,10 @@ function LoginForm(props) {
     await addDoc(collection(db, 'mail'), {
       to: 'contacto@streamreaders.com',
       message: {
-        subject: 'Nuevo mensaje de Stream Readers - Planilla de Contacto',
+        subject: 'New message from Briefly Books - Contact form',
         replyTo: values.email,
         text: values.mensaje,
-        html: `Mensaje de ${values.email}: ${values.mensaje}`,
+        html: `Message from ${values.email}: ${values.mensaje}`,
       },
     })
       .then(setConfirmation(true))
@@ -48,35 +48,35 @@ function LoginForm(props) {
         return (
           <Form className="formHome">
             {confirmation && (
-              <p className="success">Tu mensaje se ha enviado con éxito</p>
+            <p className="success">Your message has been sent successfully</p>
             )}
             <FormikControl
               className="text-input"
               control="input"
               type="name"
-              label="Nombre"
+              label="Name"
               name="name"
             />
             <FormikControl
               className="text-input"
               control="input"
               type="email"
-              label="Correo Electrónico"
+              label="Email"
               name="email"
             />
             <FormikControl
               className="textarea"
               control="textarea"
               type="textarea"
-              label="Mensaje"
-              placeholder="Mensaje"
+              label="Message"
+              placeholder="Message"
               name="mensaje"
               rows="5"
             />
             <Button
               type="submit"
               disabled={formik.isSubmitting}
-              text="Enviar Mensaje"
+              text="Send Message"
               size="small"
             />
 							

@@ -10,15 +10,16 @@ function Footer() {
       <Link href="/">
         <a>
           <Image
-            src="https://firebasestorage.googleapis.com/v0/b/stream-readers-prod.appspot.com/o/img%2Flogo.png?alt=media&token=078e0fb8-76c4-425a-ac95-532a6ee1fcaa"
-            alt="logo"
-            width={175}
-            height={45}
+            src="/assets/LogoBriefly.png"
+            alt="Briefly logo"
+            width={150}
+            height={100}
+            style={{ width: '140px', height: 'auto' }}
           />
         </a>
       </Link>
       <div className={styles.copyContainer}>
-        <p className={styles.copyright}>{`Stream Readers©  Todos los derechos reservados ${new Date().getFullYear()}`}</p>
+        <p className={styles.copyright}>{`Briefly Books© All rights reserved ${new Date().getFullYear()}`}</p>
       </div>
       <div className={styles.social}>
 				

@@ -47,22 +47,22 @@ const CancelForm = (props) => {
 
   return (
     <FormProvider>
-      <h2>Cancela tu suscripción</h2>
+      <h2>Cancel your subscription</h2>
       {confirmation ? (
         <p>
-          La solicitud de cancelación de suscripción ha sido enviada. Te enviaremos un correo de confirmacion en breve.
+          Your cancellation request has been sent. We will email you a confirmation shortly.
         </p>
       ) : (
         <Form onSubmit={handleSubmit}>
           <SelectInput
             name="motivoCancelacion"
-            label="Motivo de cancelación"
+            label="Reason for cancellation"
             options={[
               { value: '', label: 'Seleccione un motivo' },
-              { value: 'precio', label: 'Precio (demasiado caro)' },
-              { value: 'contenido_limitado', label: 'Selección de contenido limitada' },
-              { value: 'problemas_tecnicos', label: 'Problemas técnicos' },
-              { value: 'servicio_alternativo', label: 'Encontré un servicio alternativo' },
+              { value: 'precio', label: 'Price (too expensive)' },
+              { value: 'contenido_limitado', label: 'Limited content selection' },
+              { value: 'problemas_tecnicos', label: 'Technical issues' },
+              { value: 'servicio_alternativo', label: 'Found an alternative service' },
               { value: 'uso_infrecuente', label: 'Uso el servicio con poca frecuencia' },
               { value: 'otro', label: 'Otro' },
             ]}
