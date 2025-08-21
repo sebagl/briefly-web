@@ -62,17 +62,18 @@ const Plans = ({ title, subtitle, shouldSubmit, onSubmit, loading, setLoading, h
       marginTop: '25px',
     },
     title: {
-      margin: '12px',
-      color: '#FFFFFF',
-      fontWeight: 'bold',
-      fontSize: '1.5em',
+      color: 'white',
+      fontSize: '1.5rem',
+      textAlign: 'center',
+      marginBottom: '10px',
+      fontWeight: '500',
     },
     subtitle: {
-      margin: '0 0 10px 0',
-      color: '#FFFFFF',
-      fontWeight: 'normal',
-      fontSize: '1.1em',
+      color: 'white',
+      fontSize: '1rem',
       textAlign: 'center',
+      marginBottom: '30px',
+      maxWidth: '800px',
     },
     contentWrapper: {
       padding: '20px',
@@ -201,6 +202,12 @@ const Plans = ({ title, subtitle, shouldSubmit, onSubmit, loading, setLoading, h
     },
   };
 
+  const periodPrices = {
+    Mensual: '$6.99',
+    Trimestral: '$14.99',
+    Anual: '$29.99',
+  };
+
   const getRenewalPeriod = (plan) => {
     switch(plan) {
     case 'Mensual':
@@ -267,7 +274,7 @@ const Plans = ({ title, subtitle, shouldSubmit, onSubmit, loading, setLoading, h
         </div>
 
         <div style={styles.renewalText}>
-          Renews {getRenewalPeriod(plan)}. Cancel anytime.
+          Renews {getRenewalPeriod(plan)} for {periodPrices[plan]}. Cancel anytime.
         </div>
         
         <Button 

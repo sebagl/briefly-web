@@ -67,8 +67,8 @@ const Beneficios = () => {
   const styles = {
     container: {
       position: 'relative',
-      paddingTop: '48px',
-      paddingBottom: '48px',
+      paddingTop: '30px',
+      paddingBottom: '30px',
       paddingLeft: '16px',
       paddingRight: '16px',
       display: 'flex',
@@ -80,7 +80,8 @@ const Beneficios = () => {
       color: 'white',
       fontSize: '1.5rem',
       textAlign: 'center',
-      marginBottom: '32px',
+      marginBottom: '20px',
+      fontWeight: '500',
     },
     imageContainer: {
       position: 'relative',

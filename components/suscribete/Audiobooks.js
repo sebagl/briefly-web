@@ -31,7 +31,7 @@ function Audiobooks({
   const styles = {
     container: {
       backgroundColor: '#22414F',
-      padding: '40px 5  px',
+      padding: '40px 5px',
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'center',
@@ -99,8 +99,7 @@ function Audiobooks({
     subscribeButton: {
       marginTop: '30px',
       borderRadius: '25px',
-      fontSize: '0.9rem',
-      fontWeight: '600',
+      fontSize: '1.1rem',
       margin: '0 auto',
     },
   };

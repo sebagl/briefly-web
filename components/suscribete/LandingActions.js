@@ -48,8 +48,8 @@ function LandingActions({ handleConvertion, screenSize, rutas = [], currentRutaI
       fontFamily: 'Poppins, sans-serif',
     },
     discount: {
-      fontSize: screenSize === 'small' ? '40px' : screenSize === 'medium' ? '40px' : '120px',
-      lineHeight: screenSize === 'small' ? '50px' : screenSize === 'medium' ? '50px' : '130px',
+      fontSize: screenSize === 'small' ? '40px' : screenSize === 'medium' ? '40px' : '80px',
+      lineHeight: screenSize === 'small' ? '45px' : screenSize === 'medium' ? '45px' : '90px',
       background: 'linear-gradient(to right, #F69333, #FCCE18)',
       WebkitBackgroundClip: 'text',
       WebkitTextFillColor: 'transparent',
@@ -77,7 +77,7 @@ function LandingActions({ handleConvertion, screenSize, rutas = [], currentRutaI
     planAnual: {
       color: '#FFFFFF',
       fontSize: screenSize === 'small' ? '22px' : screenSize === 'medium' ? '25px' : '30px',
-      lineHeight: screenSize === 'small' ? '26px' : screenSize === 'medium' ? '25px' : '30px',
+      lineHeight: screenSize === 'small' ? '27px' : screenSize === 'medium' ? '30px' : '35px',
       fontWeight: 400,
       margin: '0',
       padding: '0',
@@ -100,9 +100,10 @@ function LandingActions({ handleConvertion, screenSize, rutas = [], currentRutaI
     },
     button: {
       borderRadius: '30px',
-      height: '50px',
-      width: '250px',
+      height: '55px',
+      width: '270px',
       fontWeight: 'bold',
+      marginTop: '20px',
     },
     categoryWrapper: {
       display: 'inline-flex',
@@ -131,14 +132,13 @@ function LandingActions({ handleConvertion, screenSize, rutas = [], currentRutaI
 
   return (
     <div style={styles.container}>
-      <h2 style={styles.discount}>BESTSELLERS</h2>
-      <h4 style={styles.planAnual}>Summarized as audiobooks</h4>
+      <h2 style={styles.discount}>Turn Books Into Breakthroughs</h2>
+      <h4 style={styles.planAnual}>Get the key insights from bestselling books in minutes</h4>
    
       
-      <p style={styles.description}>Unlimited access to exclusive content</p>
-      <p style={styles.price}>Start your 7-day free trial</p>
+      <p style={styles.description}>Learn more in less time. Grow every day.</p>
       <Button 
-        text="Start free trial" 
+        text="START FREE TRIAL" 
         variant="callToAction" 
         size="large" 
         onClick={() => handleConvertion()} 

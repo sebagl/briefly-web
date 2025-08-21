@@ -143,16 +143,18 @@ const Resumenes = ({
       overflow: 'hidden', // Ensure the banner doesn't create horizontal scroll
     },
     title: {
-      fontSize: screenSize === 'small' ? '1.2rem' : '1.5rem',
       color: 'white',
-      marginBottom: '1rem',
+      fontSize: '1.5rem',
       textAlign: 'center',
-      fontWeight: 'bold',
+      marginBottom: '10px',
+      fontWeight: '500',
     },
     subtitle: {
-      fontSize: '1rem',
       color: 'white',
+      fontSize: '1rem',
       textAlign: 'center',
+      marginBottom: '30px',
+      maxWidth: '800px',
     },
     imagesContainer: {
       position: 'relative',
