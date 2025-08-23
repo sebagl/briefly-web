@@ -36,9 +36,9 @@ function LandingActions({ handleConvertion, screenSize, rutas = [], currentRutaI
   const styles = {
     container: {
       position: 'absolute',
-      top: screenSize === 'small' ? '75%' : '25%',
+      top: screenSize === 'small' ? '15%' : '25%',
       left: screenSize === 'small' ? '50%' : '30%',
-      transform: screenSize === 'small' ? 'translate(-50%, -50%)' : 'translateX(-50%)',
+      transform: screenSize === 'small' ? 'translate(-50%, 0)' : 'translateX(-50%)',
       width: '80%',
       maxWidth: '600px',
       display: 'flex',
@@ -48,11 +48,10 @@ function LandingActions({ handleConvertion, screenSize, rutas = [], currentRutaI
       fontFamily: 'Poppins, sans-serif',
     },
     discount: {
-      fontSize: screenSize === 'small' ? '40px' : screenSize === 'medium' ? '40px' : '80px',
-      lineHeight: screenSize === 'small' ? '45px' : screenSize === 'medium' ? '45px' : '90px',
-      background: 'linear-gradient(to right, #F69333, #FCCE18)',
-      WebkitBackgroundClip: 'text',
-      WebkitTextFillColor: 'transparent',
+      fontSize: screenSize === 'small' ? '30px' : screenSize === 'medium' ? '40px' : '80px',
+      lineHeight: screenSize === 'small' ? '35px' : screenSize === 'medium' ? '45px' : '90px',
+      color: '#FFFFFF',
+   
       margin: '5px',
       padding: '0',
     },
@@ -84,8 +83,8 @@ function LandingActions({ handleConvertion, screenSize, rutas = [], currentRutaI
     },
     description: {
       color: '#FFFFFF',
-      fontSize: screenSize === 'small' ? '16px' : screenSize === 'medium' ? '20px' : '24px',
-      lineHeight: screenSize === 'small' ? '16px' : screenSize === 'medium' ? '20px' : '24px',
+      fontSize: screenSize === 'small' ? '20px' : screenSize === 'medium' ? '20px' : '24px',
+      lineHeight: screenSize === 'small' ? '25px' : screenSize === 'medium' ? '20px' : '24px',
       fontWeight: 400,
       margin: '10px 0',
       padding: '0',
@@ -100,7 +99,7 @@ function LandingActions({ handleConvertion, screenSize, rutas = [], currentRutaI
     },
     button: {
       borderRadius: '30px',
-      height: '55px',
+      height: '50px',
       width: '270px',
       fontWeight: 'bold',
       marginTop: '20px',
@@ -132,13 +131,13 @@ function LandingActions({ handleConvertion, screenSize, rutas = [], currentRutaI
 
   return (
     <div style={styles.container}>
-      <h2 style={styles.discount}>Turn Books Into Breakthroughs</h2>
-      <h4 style={styles.planAnual}>Get the key insights from bestselling books in minutes</h4>
+      <h2 style={styles.discount}>Master money in 7 days</h2>
+      <h4 style={styles.planAnual}>-just 15 minutes a day-</h4>
    
       
-      <p style={styles.description}>Learn more in less time. Grow every day.</p>
+      <p style={styles.description}>Short, powerful audio summaries from timeless classics to new arrivals - wisdom in minutes. </p>
       <Button 
-        text="START FREE TRIAL" 
+        text="Start 7-day free trial" 
         variant="callToAction" 
         size="large" 
         onClick={() => handleConvertion()} 

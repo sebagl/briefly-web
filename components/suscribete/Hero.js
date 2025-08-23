@@ -28,8 +28,8 @@ function Hero({ handleConvertion, screenSize, currentRutaIndex, rutas }) {
   }, [contactIsOpen, loginIsOpen, perfilIsOpen]);
 
   const backgroundImage = screenSize !== 'small'
-    ? 'https://firebasestorage.googleapis.com/v0/b/stream-readers-prod.appspot.com/o/backgrounds%2FDesktop.jpg?alt=media&token=f0dff42b-4530-4f6e-b0f2-07297797f5fc' 
-    : 'https://firebasestorage.googleapis.com/v0/b/stream-readers-prod.appspot.com/o/backgrounds%2Fsuscr%C3%ADbete-mobile.png?alt=media&token=f0f9d02f-46a0-454d-a6d0-b77f80e9fff4';
+    ? '/assets/hero-finance-desktop.jpg' 
+    : '/assets/hero-finance-mobile.jpg';
 
   const styles = {
     heroLanding: {
