@@ -104,10 +104,11 @@ function Audiobooks({
     },
   };
 
-  // Set initial category using displayName
+  // Set initial category to Finance, fallback to first shuffled category
   useEffect(() => {
     if (shuffledCategories.length > 0 && !selectedCategory) {
-      setSelectedCategory(shuffledCategories[0]?.displayName);
+      const financeCategory = shuffledCategories.find(cat => cat.displayName === 'Finance');
+      setSelectedCategory(financeCategory?.displayName || shuffledCategories[0]?.displayName);
     }
   }, [shuffledCategories, selectedCategory]);
 

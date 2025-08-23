@@ -36,7 +36,7 @@ function LandingActions({ handleConvertion, screenSize, rutas = [], currentRutaI
   const styles = {
     container: {
       position: 'absolute',
-      top: screenSize === 'small' ? '15%' : '25%',
+      top: screenSize === 'small' ? '13%' : '25%',
       left: screenSize === 'small' ? '50%' : '30%',
       transform: screenSize === 'small' ? 'translate(-50%, 0)' : 'translateX(-50%)',
       width: '80%',
@@ -68,8 +68,8 @@ function LandingActions({ handleConvertion, screenSize, rutas = [], currentRutaI
       WebkitBackgroundClip: 'text',
       WebkitTextFillColor: 'transparent',
       display: 'inline',
-      fontSize: screenSize === 'small' ? '30px' : screenSize === 'medium' ? '25px' : '30px',
-      lineHeight: screenSize === 'small' ? '30px' : screenSize === 'medium' ? '25px' : '30px',
+      fontSize: screenSize === 'small' ? '20px' : screenSize === 'medium' ? '25px' : '30px',
+      lineHeight: screenSize === 'small' ? '22px' : screenSize === 'medium' ? '25px' : '30px',
       fontWeight: 500,
       padding: '0',
     },
@@ -83,8 +83,8 @@ function LandingActions({ handleConvertion, screenSize, rutas = [], currentRutaI
     },
     description: {
       color: '#FFFFFF',
-      fontSize: screenSize === 'small' ? '20px' : screenSize === 'medium' ? '20px' : '24px',
-      lineHeight: screenSize === 'small' ? '25px' : screenSize === 'medium' ? '20px' : '24px',
+      fontSize: screenSize === 'small' ? '17px' : screenSize === 'medium' ? '20px' : '24px',
+      lineHeight: screenSize === 'small' ? '20px' : screenSize === 'medium' ? '20px' : '24px',
       fontWeight: 400,
       margin: '10px 0',
       padding: '0',
@@ -99,10 +99,10 @@ function LandingActions({ handleConvertion, screenSize, rutas = [], currentRutaI
     },
     button: {
       borderRadius: '30px',
-      height: '50px',
+      height: '40px',
       width: '270px',
-      fontWeight: 'bold',
-      marginTop: '20px',
+      // fontWeight: 'bold',
+      marginTop: '8px',
     },
     categoryWrapper: {
       display: 'inline-flex',
